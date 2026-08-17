@@ -1,0 +1,9 @@
+{
+  "releaseId": "synthetic-2026.08.17",
+  "checks": [
+    { "id": "build", "required": true, "status": "passed", "summary": "Compiled successfully" },
+    { "id": "docs", "required": false, "status": "failed", "summary": "Release notes need polish" },
+    { "id": "tests", "required": true, "status": "passed", "summary": "All deterministic tests passed" }
+  ]
+}
+

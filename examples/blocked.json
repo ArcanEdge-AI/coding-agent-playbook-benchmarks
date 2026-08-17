@@ -1,0 +1,9 @@
+{
+  "releaseId": "synthetic-2026.08.18",
+  "checks": [
+    { "id": "build", "required": true, "status": "passed" },
+    { "id": "security-scan", "required": true, "status": "missing", "summary": "Synthetic report not supplied" },
+    { "id": "tests", "required": true, "status": "failed", "summary": "Synthetic regression" }
+  ]
+}
+
