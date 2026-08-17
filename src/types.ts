@@ -7,13 +7,25 @@ export interface ReleaseCheck {
   summary?: string;
 }
 
+export interface ReleaseWaiver {
+  checkId: string;
+  reason: string;
+  expiresAt: string;
+}
+
 export interface ReleaseManifest {
   releaseId: string;
   checks: ReleaseCheck[];
+  waivers?: ReleaseWaiver[];
+}
+
+export interface EvaluatedWaiver extends ReleaseWaiver {
+  state: "active" | "expired";
 }
 
 export interface EvaluatedCheck extends ReleaseCheck {
   blocking: boolean;
+  waiver?: EvaluatedWaiver;
 }
 
 export interface EvaluationResult {
@@ -23,4 +35,3 @@ export interface EvaluationResult {
   nonBlockingIssueCount: number;
   ready: boolean;
 }
-

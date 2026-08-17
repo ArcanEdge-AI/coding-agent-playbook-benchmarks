@@ -9,8 +9,9 @@ export function formatHuman(result: EvaluationResult): string {
     "Checks:"
   ];
   for (const check of result.checks) {
-    const severity = check.blocking ? "BLOCKING" : check.status === "passed" ? "OK" : "NOTICE";
-    lines.push(`- [${severity}] ${check.id}: ${check.status}${check.summary ? ` — ${check.summary}` : ""}`);
+    const severity = check.waiver?.state === "active" ? "WAIVED" : check.blocking ? "BLOCKING" : check.status === "passed" ? "OK" : "NOTICE";
+    const waiver = check.waiver ? ` — waiver ${check.waiver.state}: ${check.waiver.reason} (expires ${check.waiver.expiresAt})` : "";
+    lines.push(`- [${severity}] ${check.id}: ${check.status}${check.summary ? ` — ${check.summary}` : ""}${waiver}`);
   }
   return `${lines.join("\n")}\n`;
 }
@@ -18,4 +19,3 @@ export function formatHuman(result: EvaluationResult): string {
 export function formatJson(result: EvaluationResult): string {
   return `${JSON.stringify(result, null, 2)}\n`;
 }
-
