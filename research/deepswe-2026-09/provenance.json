@@ -1,0 +1,34 @@
+{
+  "state": "completed",
+  "global_instruction_source": "coding-agent-playbook-codex/custom-instructions/global-coding-agent-instructions.md",
+  "previous_sha256": "96e30cf2f84250354a26a899b379584b8964141998203415a4fc361d97ab6288",
+  "revised_sha256": "03f0069eeba198806c29dbc24a88097220c7fd5af10aaff265d8b377b8b5e325",
+  "prepared_candidate_body_sha256": "6b66a402845ed75c83cf7930b38c5aba90fe1b0f6d23bb060838fa8ecd9cb350",
+  "installation": {
+    "authorized": true,
+    "files_changed": [
+      "installed AGENTS.md",
+      "maintained Codex global source"
+    ],
+    "substitutions": 9,
+    "other_bytes_preserved": true
+  },
+  "local_studies": {
+    "deepswe-calibration-v1": {
+      "index": "evidence-index.json",
+      "sha256": "3e933fdc12c476943243d96a9ba629ebdf8c29c63f7571f5953df03e5a27bf40",
+      "files": 1195
+    },
+    "deepswe-current-global-v1": {
+      "index": "evidence-index-full.json",
+      "sha256": "b84fec9dd3be902000bd88351cae3ffa6ff2787a96dad156556132c428aa7060",
+      "files": 874
+    },
+    "deepswe-updated-global-v1": {
+      "index": "evidence-index.json",
+      "sha256": "5c0a50ddd781c58c06abef5a90b061bf6a57246e1d52652169fe2a012b3989bc",
+      "files": 765
+    }
+  },
+  "raw_sessions_in_repository": false
+}

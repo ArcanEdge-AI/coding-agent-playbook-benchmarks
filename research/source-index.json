@@ -1,0 +1,72 @@
+{
+  "benchmark/report.md": {
+    "sha256": "518cb862ee8377b31e6e50a115e213dfc908c62d2499693fad183d8ea4c059f7",
+    "availability": "original local archive; summarized in history.md"
+  },
+  "full-benchmark/report.md": {
+    "sha256": "04ddb98ee08b1fd513aa64306ca94e2ff84a9ca99d82501f2d59e91727a1cfb7",
+    "availability": "original local archive; summarized in history.md"
+  },
+  "remediation/report.md": {
+    "sha256": "469be19672162bb923d90f17e72f3b2a1dbed64de6529188016c6378adee8273",
+    "availability": "original local archive; summarized in history.md"
+  },
+  "corrections/report.md": {
+    "sha256": "0ea7957d8104b1ef6ffc3993f721d7c0754f9ad4049b9a079531d0bd2cf7c234",
+    "availability": "original local archive; summarized in history.md"
+  },
+  "system-evaluation/ISOLATION-CORRECTION.md": {
+    "sha256": "de34809eddf6b00b9bf5859f1fdbe531146d957725e19fba5ab432ec7b1e23fd",
+    "availability": "original local archive; summarized in history.md"
+  },
+  "system-evaluation/clean-v1/report.md": {
+    "sha256": "cc39829e8ffe41b06c583f8a5cfa01945325ce5f59be11f0b0d892a234973a18",
+    "availability": "original local archive; summarized in history.md"
+  },
+  "system-evaluation/current-global-v1/report.md": {
+    "sha256": "5f389947e2aa354806af5fcbae5c5f5832272f7258cd201aea9d4da3914d59b9",
+    "availability": "original local archive; summarized in history.md"
+  },
+  "system-evaluation/repository-baseline-v1/report.md": {
+    "sha256": "142423e0c0ac6b015945e8d3f0f449b56ebe4e81a0b871a8cf75f0c97098c0df",
+    "availability": "original local archive; summarized in history.md"
+  },
+  "system-evaluation/repository-current-global-v1/report.md": {
+    "sha256": "2637eeb77f51874f1d7b421788ec5711dab04b8254aee577cfcc3a132327c587",
+    "availability": "original local archive; summarized in history.md"
+  },
+  "system-evaluation/known-answer-v2-baseline/report.md": {
+    "sha256": "106200e99b41370e180d1562bf2ac2ae75625b152ee443ae03c994d9ff3f887f",
+    "availability": "original local archive; summarized in history.md"
+  },
+  "system-evaluation/deepswe-calibration-v1/report.md": {
+    "sha256": "04b41c4cd50afedd443673eee17737600d56eee5be9884ef0bc3aae80b4d8b99",
+    "availability": "original local archive; summarized in history.md"
+  },
+  "system-evaluation/deepswe-current-global-v1/report-full.md": {
+    "sha256": "e5f4e5c57167fe66a28c081698e117a8181d4a83e7919936167adca02c5006c7",
+    "availability": "original local archive; summarized in history.md"
+  },
+  "skill-maintenance-guide.md": {
+    "sha256": "d2a7ae3e3f400109c4990e06927bdd8a30e57019ae4b02aa85cc0235c79d88e5",
+    "export": "guides/skill-maintenance-guide.md",
+    "transformation": "replace private absolute evidence links with research history; append provenance note"
+  },
+  "prompting-evidence-guide.md": {
+    "sha256": "1bfa029e518e3a66a29e52d971e00fa5662f2ebd8efc8ce63b99cdbda481b9a5",
+    "export": "guides/prompting-evidence-guide.md",
+    "transformation": "replace private absolute evidence links with research history; append provenance note"
+  },
+  "system-evaluation/deepswe-updated-global-v1/report.md": {
+    "sha256": "f4240bff8c797d8e7d53a86410e49e7eaa432627463c95a11820383cd300835f",
+    "availability": "original sealed local archive; portable report in deepswe-2026-09/results.md"
+  },
+  "system-evaluation/deepswe-updated-global-v1/evidence-index.json": {
+    "sha256": "5c0a50ddd781c58c06abef5a90b061bf6a57246e1d52652169fe2a012b3989bc",
+    "availability": "original completed local archive seal; see deepswe-2026-09/provenance.json"
+  },
+  "system-evaluation/deepswe-delegation-ablation-v1/pause-status.json": {
+    "sha256": "ede789c32191d5ce069d91644a73e8c84fec7321b175655b778ec6e915283943",
+    "availability": "paused local preparation; compact status in deepswe-delegation-ablation-2026-09/status.json"
+  }
+}

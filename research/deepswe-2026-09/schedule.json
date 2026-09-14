@@ -1,0 +1,146 @@
+[
+  {
+    "task": "obsidian-linter-link-format-conversion",
+    "route": "luna-high",
+    "model": "gpt-5.6-luna",
+    "effort": "high",
+    "repeat": 1,
+    "timeout_seconds": 1200
+  },
+  {
+    "task": "kcp-go-multiplexed-kcp-streams",
+    "route": "luna-high",
+    "model": "gpt-5.6-luna",
+    "effort": "high",
+    "repeat": 1,
+    "timeout_seconds": 1200
+  },
+  {
+    "task": "python-statemachine-state-data-scoping",
+    "route": "sol-high",
+    "model": "gpt-5.6-sol",
+    "effort": "high",
+    "repeat": 1,
+    "timeout_seconds": 1200
+  },
+  {
+    "task": "kcp-go-multiplexed-kcp-streams",
+    "route": "terra-high",
+    "model": "gpt-5.6-terra",
+    "effort": "high",
+    "repeat": 1,
+    "timeout_seconds": 1200
+  },
+  {
+    "task": "kcp-go-multiplexed-kcp-streams",
+    "route": "luna-max",
+    "model": "gpt-5.6-luna",
+    "effort": "max",
+    "repeat": 1,
+    "timeout_seconds": 1200
+  },
+  {
+    "task": "obsidian-linter-link-format-conversion",
+    "route": "sol-high",
+    "model": "gpt-5.6-sol",
+    "effort": "high",
+    "repeat": 1,
+    "timeout_seconds": 1200
+  },
+  {
+    "task": "python-statemachine-state-data-scoping",
+    "route": "luna-high",
+    "model": "gpt-5.6-luna",
+    "effort": "high",
+    "repeat": 1,
+    "timeout_seconds": 1200
+  },
+  {
+    "task": "python-statemachine-state-data-scoping",
+    "route": "luna-max",
+    "model": "gpt-5.6-luna",
+    "effort": "max",
+    "repeat": 1,
+    "timeout_seconds": 1200
+  },
+  {
+    "task": "python-statemachine-state-data-scoping",
+    "route": "astra-high",
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "repeat": 1,
+    "timeout_seconds": 1200
+  },
+  {
+    "task": "kcp-go-multiplexed-kcp-streams",
+    "route": "astra-high",
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "repeat": 1,
+    "timeout_seconds": 1200
+  },
+  {
+    "task": "kcp-go-multiplexed-kcp-streams",
+    "route": "luna-medium",
+    "model": "gpt-5.6-luna",
+    "effort": "medium",
+    "repeat": 1,
+    "timeout_seconds": 1200
+  },
+  {
+    "task": "obsidian-linter-link-format-conversion",
+    "route": "luna-medium",
+    "model": "gpt-5.6-luna",
+    "effort": "medium",
+    "repeat": 1,
+    "timeout_seconds": 1200
+  },
+  {
+    "task": "obsidian-linter-link-format-conversion",
+    "route": "astra-high",
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "repeat": 1,
+    "timeout_seconds": 1200
+  },
+  {
+    "task": "python-statemachine-state-data-scoping",
+    "route": "terra-high",
+    "model": "gpt-5.6-terra",
+    "effort": "high",
+    "repeat": 1,
+    "timeout_seconds": 1200
+  },
+  {
+    "task": "kcp-go-multiplexed-kcp-streams",
+    "route": "sol-high",
+    "model": "gpt-5.6-sol",
+    "effort": "high",
+    "repeat": 1,
+    "timeout_seconds": 1200
+  },
+  {
+    "task": "obsidian-linter-link-format-conversion",
+    "route": "terra-high",
+    "model": "gpt-5.6-terra",
+    "effort": "high",
+    "repeat": 1,
+    "timeout_seconds": 1200
+  },
+  {
+    "task": "python-statemachine-state-data-scoping",
+    "route": "luna-medium",
+    "model": "gpt-5.6-luna",
+    "effort": "medium",
+    "repeat": 1,
+    "timeout_seconds": 1200
+  },
+  {
+    "task": "obsidian-linter-link-format-conversion",
+    "route": "luna-max",
+    "model": "gpt-5.6-luna",
+    "effort": "max",
+    "repeat": 1,
+    "timeout_seconds": 1200
+  }
+]

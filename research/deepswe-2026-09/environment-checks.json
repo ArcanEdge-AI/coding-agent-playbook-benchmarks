@@ -1,0 +1,176 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "check-oracle-typescript-1",
+      "task": "obsidian-linter-link-format-conversion",
+      "agent": "oracle",
+      "repeat": 1,
+      "returncode": 0,
+      "elapsed_seconds": 107.60899999999674,
+      "exception": null,
+      "reward": {
+        "reward": 1,
+        "f2p_total": 60,
+        "f2p_passed": 60,
+        "p2p_total": 1131,
+        "p2p_passed": 1131,
+        "f2p": 1.0,
+        "p2p": 1.0,
+        "partial": 1.0
+      }
+    },
+    {
+      "name": "check-nop-typescript-1",
+      "task": "obsidian-linter-link-format-conversion",
+      "agent": "nop",
+      "repeat": 1,
+      "returncode": 0,
+      "elapsed_seconds": 40.82800000003772,
+      "exception": null,
+      "reward": {
+        "reward": 0,
+        "f2p_total": 60,
+        "f2p_passed": 0,
+        "p2p_total": 1131,
+        "p2p_passed": 1131,
+        "f2p": 0.0,
+        "p2p": 1.0,
+        "partial": 0.9496221662468514
+      }
+    },
+    {
+      "name": "check-oracle-typescript-2",
+      "task": "obsidian-linter-link-format-conversion",
+      "agent": "oracle",
+      "repeat": 2,
+      "returncode": 0,
+      "elapsed_seconds": 44.75,
+      "exception": null,
+      "reward": {
+        "reward": 1,
+        "f2p_total": 60,
+        "f2p_passed": 60,
+        "p2p_total": 1131,
+        "p2p_passed": 1131,
+        "f2p": 1.0,
+        "p2p": 1.0,
+        "partial": 1.0
+      }
+    },
+    {
+      "name": "check-oracle-python-1",
+      "task": "python-statemachine-state-data-scoping",
+      "agent": "oracle",
+      "repeat": 1,
+      "returncode": 0,
+      "elapsed_seconds": 69.28099999995902,
+      "exception": null,
+      "reward": {
+        "reward": 1,
+        "f2p_total": 72,
+        "f2p_passed": 72,
+        "p2p_total": 1286,
+        "p2p_passed": 1286,
+        "f2p": 1.0,
+        "p2p": 1.0,
+        "partial": 1.0
+      }
+    },
+    {
+      "name": "check-nop-python-1",
+      "task": "python-statemachine-state-data-scoping",
+      "agent": "nop",
+      "repeat": 1,
+      "returncode": 0,
+      "elapsed_seconds": 54.64100000000326,
+      "exception": null,
+      "reward": {
+        "reward": 0,
+        "f2p_total": 72,
+        "f2p_passed": 0,
+        "p2p_total": 1286,
+        "p2p_passed": 1286,
+        "f2p": 0.0,
+        "p2p": 1.0,
+        "partial": 0.946980854197349
+      }
+    },
+    {
+      "name": "check-oracle-python-2",
+      "task": "python-statemachine-state-data-scoping",
+      "agent": "oracle",
+      "repeat": 2,
+      "returncode": 0,
+      "elapsed_seconds": 56.76500000001397,
+      "exception": null,
+      "reward": {
+        "reward": 1,
+        "f2p_total": 72,
+        "f2p_passed": 72,
+        "p2p_total": 1286,
+        "p2p_passed": 1286,
+        "f2p": 1.0,
+        "p2p": 1.0,
+        "partial": 1.0
+      }
+    },
+    {
+      "name": "check-oracle-go-1",
+      "task": "kcp-go-multiplexed-kcp-streams",
+      "agent": "oracle",
+      "repeat": 1,
+      "returncode": 0,
+      "elapsed_seconds": 66.68800000002375,
+      "exception": null,
+      "reward": {
+        "reward": 1,
+        "f2p_total": 30,
+        "f2p_passed": 30,
+        "p2p_total": 12,
+        "p2p_passed": 12,
+        "f2p": 1.0,
+        "p2p": 1.0,
+        "partial": 1.0
+      }
+    },
+    {
+      "name": "check-nop-go-1",
+      "task": "kcp-go-multiplexed-kcp-streams",
+      "agent": "nop",
+      "repeat": 1,
+      "returncode": 0,
+      "elapsed_seconds": 43.15599999995902,
+      "exception": null,
+      "reward": {
+        "reward": 0,
+        "f2p_total": 30,
+        "f2p_passed": 0,
+        "p2p_total": 12,
+        "p2p_passed": 12,
+        "f2p": 0.0,
+        "p2p": 1.0,
+        "partial": 0.2857142857142857
+      }
+    },
+    {
+      "name": "check-oracle-go-2",
+      "task": "kcp-go-multiplexed-kcp-streams",
+      "agent": "oracle",
+      "repeat": 2,
+      "returncode": 0,
+      "elapsed_seconds": 51.59400000004098,
+      "exception": null,
+      "reward": {
+        "reward": 1,
+        "f2p_total": 30,
+        "f2p_passed": 30,
+        "p2p_total": 12,
+        "p2p_passed": 12,
+        "f2p": 1.0,
+        "p2p": 1.0,
+        "partial": 1.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+--- sealed-global_codex.py
++++ controlled_codex.py
+@@ -79,7 +79,7 @@
+         doc = json.loads(path.read_text(encoding='utf8'))
+         main = doc['services']['main']
+         main['security_opt'] = ['seccomp=unconfined']
+-        main['labels'] = {'codex.benchmark.owner': 'deepswe-updated-global-v1'}
++        main['labels'] = {'codex.benchmark.owner': 'deepswe-delegation-ablation-v1'}
+         path.write_text(json.dumps(doc), encoding='utf8')
+         return path
+ 
+@@ -87,7 +87,10 @@
+ class CleanCodex(Codex):
+     _REMOTE_CODEX_HOME = PurePosixPath('/opt/calibration/codex-home')
+     _REMOTE_CODEX_SECRETS_DIR = PurePosixPath('/opt/calibration/codex-secrets')
+-    def __init__(self, *args, probe_only=False, **kwargs):
++    def __init__(self, *args, arm, probe_only=False, smoke=False, **kwargs):
++        assert arm in ("current", "without-subagents")
++        self.arm = arm
++        self.smoke = smoke
+         self.probe_only = probe_only
+         super().__init__(*args, **kwargs)
+         assert self._version == '0.154.0-alpha.6.2', self._version
+@@ -97,7 +100,10 @@
+         return allowlist_from_urls([], default_domains=['api.openai.com', 'chatgpt.com', 'auth.openai.com'])
+ 
+     def build_cli_flags(self):
+-        return super().build_cli_flags() + ' ' + CONFIG_FLAGS
++        return super().build_cli_flags() + ' ' + CONFIG_FLAGS + ' ' + ' '.join('--config ' + shlex.quote(v) for v in self.control_flags())
++
++    def control_flags(self):
++        return ['agents.enabled=' + str(self.arm == 'current').lower(), 'agents.default_subagent_model="gpt-5.6-luna"', 'agents.default_subagent_reasoning_effort="max"', 'agents.max_concurrent_threads_per_session=3', 'features.fast_mode=false']
+ 
+     async def exec_as_agent(self, environment, command, env=None, cwd=None, timeout_sec=None):
+         marker = 'codex exec --dangerously-bypass-approvals-and-sandbox '
+@@ -141,13 +147,26 @@
+         assert all(report[k] for k in ('workspace_write', 'git_branch_commit', 'python_subprocess', 'node_subprocess', 'local_binding')), report
+         assert report['direct_internet'] != 'CONNECTED' and report['proxy_internet'] != 'CONNECTED', report
+         # The sole context treatment: native discovery from container CODEX_HOME.
+-        frozen = Path(__file__).resolve().parent / 'updated-global.md'
++        frozen = Path(__file__).resolve().parent / 'instructions' / (self.arm + '.md')
+         global_bytes = frozen.read_bytes()
+         global_sha = hashlib.sha256(global_bytes).hexdigest()
+         await environment.upload_file(frozen, '/opt/calibration/codex-home/AGENTS.md')
+         # Parse the exact upstream CLI invocation to recover its final task argument.
+         tokens = shlex.split(command)
+         instruction = tokens[tokens.index('--') + 1]
++        if self.smoke:
++            smoke_instruction = ('This is a native capability-control probe, not a repository implementation task. '
++                'Do not edit files, run repository tests, create worktrees, or use networking. '
++                'If a real subagent spawn tool is available, spawn exactly one child using gpt-5.6-luna and max reasoning, '
++                'with no inherited history. Give it this complete bounded assignment: parent probe-root, child probe-leaf, '
++                'permit probe-P1 of total budget 1; read-only, no tools or descendants; respond exactly CHILD_CONTROL_OK. '
++                'The parent completion subset is verifying spawn and reporting; the child subset is returning that marker. '
++                'Wait for that child to finish, then respond CONTROL_AVAILABLE. '
++                'If no subagent spawn tool is available, do not emulate or launch agents via shell or APIs; '
++                'respond CONTROL_UNAVAILABLE. Do not claim a spawn without an actual tool result.')
++            assert command.count(shlex.quote(instruction)) == 1
++            command = command.replace(shlex.quote(instruction), shlex.quote(smoke_instruction), 1)
++            instruction = smoke_instruction
+         debug = SHELL_INIT + 'codex debug prompt-input ' + self.build_cli_flags() + ' --config ' + shlex.quote('model="' + self.model_name.split('/')[-1] + '"') + ' ' + shlex.quote(instruction)
+         startup = await super().exec_as_agent(*run_args, command=debug, env=env, cwd='/app')
+         content = json.loads(startup.stdout)
+@@ -160,6 +179,7 @@
+         global_text = global_bytes.decode('utf8').replace('\r\n', '\n').strip()
+         assert normalized.count(global_text) == 1, 'Global text missing, truncated or duplicated'
+         assert normalized.count('coding-agent-playbook-codex:start') == 1
++        assert ('<multi_agent_role>' in normalized) == (self.arm == 'current'), 'Native capability context mismatch'
+         (self.logs_dir / 'startup-input.json').write_text(startup.stdout, encoding='utf8')
+         # Only the frozen global is present; repository instructions remain native.
+         context_check = await super().exec_as_agent(*run_args,
+@@ -170,7 +190,7 @@
+         (self.logs_dir / 'preflight.json').write_text(json.dumps({'status': 'passed', 'model': self.model_name,
+             'native_version': native.stdout.strip(), 'globals_absent': False, 'global_sha256': global_sha, 'global_present_exactly_once': True, 'helpers': 0,
+             'startup_sha256': hashlib.sha256(startup.stdout.encode()).hexdigest(),
+-            'config_flags': FLAGS, 'instruction_sha256': hashlib.sha256(instruction.encode()).hexdigest(),
++            'config_flags': FLAGS + self.control_flags(), 'arm': self.arm, 'smoke': self.smoke, 'agents_enabled': self.arm == 'current', 'instruction_sha256': hashlib.sha256(instruction.encode()).hexdigest(),
+             'repo_instructions_retained': True, 'probe_only': self.probe_only}, indent=2), encoding='utf8')
+         if self.probe_only:
+             return await super().exec_as_agent(*run_args, command='true', env=env)
