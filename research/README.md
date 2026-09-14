@@ -8,6 +8,14 @@ The [delegation ablation](deepswe-delegation-ablation-2026-09/README.md) was pau
 
 The [prompting evidence guide](guides/prompting-evidence-guide.md) and [skill maintenance guide](guides/skill-maintenance-guide.md) are retained separately. They are practical guidance with explicit evidence limits, not validated universal policies.
 
+## Next study: reusable evaluation v1
+
+The [evaluation plan](evaluation-v1/PLAN.md) and [preparation guide](../benchmarks/v1/README.md) define a new path for testing acceptable code per total workflow cost. The repository now includes a [24-scenario authoring backlog](../benchmarks/v1/manifest.json), a [blinded maintainability rubric](../benchmarks/v1/rubrics/maintainability.md), [initial globals/delegation conditions](../protocols/initial-globals-delegation.json), and a [future revision template](../protocols/candidate-vs-incumbent.json).
+
+These are proposed designs and offline planning tools, **not implemented task packages, validated runtime controls, scored results, or inference authorization**. Development/confirmation splits and model/budget choices remain unresolved. Public scenario descriptions are not sealed confirmation evidence. The next implementation work is task authoring and independent grader/runtime validation, followed by a separately approved pilot. Do not automatically restart the old 48-run proposal.
+
+The [offline validator](../tools/benchmark/validate_plan.py) checks metadata consistency only. Its [unit tests](../tools/benchmark/test_validate_plan.py) are tests of the planning tool, not coding-agent performance. Existing experimental artifacts remain unchanged.
+
 ## Evidence levels
 
 - Structural parsing checks that a file is well formed; it does not prove runtime discovery or behavior.
