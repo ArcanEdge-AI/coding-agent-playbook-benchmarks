@@ -6,6 +6,10 @@ The [DeepSWE comparison](deepswe-2026-09/README.md) is completed: **54 scored at
 
 The [delegation ablation](deepswe-delegation-ablation-2026-09/README.md) was paused by the user for cost before any of its 48 planned scored attempts. Its preparation and probe status are retained; it has no comparative coding results. **No further inference is authorized by this archive.** Use the [continuation guide](CONTINUE.md) to pick up the work from this repository.
 
+## New: repeatable benchmark v2 preparation
+
+The [v2 package](benchmark-v2/README.md) adds a [controlled protocol](benchmark-v2/PROTOCOL.md), [six development-task specifications and holdout rules](benchmark-v2/TASKS.md), a [draft 24-start pilot manifest](benchmark-v2/pilot.json), an [offline cost review](benchmark-v2/COST-REVIEW.md), and unit-tested planning/reporting tools. It is preparation for future experiments, not a completed or inference-ready study. Task fixtures and native runtime controls still require validation; the root setting and paid budget are not approved. The original 54 scored attempts and paused 48-run proposal remain unchanged.
+
 The [prompting evidence guide](guides/prompting-evidence-guide.md) and [skill maintenance guide](guides/skill-maintenance-guide.md) are retained separately. They are practical guidance with explicit evidence limits, not validated universal policies.
 
 ## Evidence levels

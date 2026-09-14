@@ -65,3 +65,19 @@ Full native sessions, committed patches, verifier logs and original probes remai
 Keep prior measured artifacts immutable. Append a new study directory for new conditions or corrected measurements, describe exclusions without inventing replacement scores, and update this guide plus `research/README.md`. Review generated files for auth data, private paths and raw transcripts before committing or publishing. Never install new global instructions as a side effect of a benchmark run.
 
 The repository's `.gitattributes` disables newline conversion inside `research/` so historical instruction bytes and hashes survive Windows and Linux checkouts. Preserve that rule when moving the research to another repository.
+
+## Repeatable benchmark v2 preparation
+
+For a new comparison, use the [v2 preparation package](benchmark-v2/README.md) and [protocol](benchmark-v2/PROTOCOL.md) rather than silently restarting the historical 48-run proposal. It adds six development-task specifications, a draft 24-start paired pilot, maintainability review criteria, an offline cost decomposition, and planning/reporting tools. **The new task fixtures are not built or validated; native runtime controls are still unresolved; no inference or budget is authorized.**
+
+The historical selected comparison remains intact: full delegation setup versus the same globals without delegation provisions and helpers. The v2 protocol separately defines instruction-only and helper-route comparisons, a reusable development/regression suite, protected confirmation tasks, explicit deadlines and submission identity, and an adoption decision based on quality and total workflow cost. Sample size and spending must be approved before a new study; the draft manifest is not authorization.
+
+Offline checks for the new package:
+
+```sh
+python -B -m unittest discover -s research/benchmark-v2/tools -p 'test_*.py' -v
+python -B research/benchmark-v2/tools/benchmark.py check research/benchmark-v2/pilot.json
+python -B research/benchmark-v2/tools/benchmark.py schedule research/benchmark-v2/pilot.json
+```
+
+These commands never launch inference. A schedule is a preview. Preparation-field checks do not establish that native controls work or that external evidence is authentic. Build and independently validate the task bundles, review the runtime/control evidence, freeze the analysis, then obtain explicit authorization before any live probes or scored runs. Keep the original archive and its scores unchanged.

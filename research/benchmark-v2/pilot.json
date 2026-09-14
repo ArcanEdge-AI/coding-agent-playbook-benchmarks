@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "study_id": "delegation-package-v2-development",
+  "status": "draft-not-authorized",
+  "comparison": "delegation_package",
+  "phase": "development",
+  "seed": 20260913,
+  "repeats": 2,
+  "conditions": [
+    {
+      "id": "current-with-helpers",
+      "instructions_path": "../deepswe-delegation-ablation-2026-09/instructions/current.md",
+      "instructions_sha256": "03f0069eeba198806c29dbc24a88097220c7fd5af10aaff265d8b377b8b5e325",
+      "helpers": true,
+      "helper_model": "gpt-5.6-luna",
+      "helper_effort": "max"
+    },
+    {
+      "id": "same-without-delegation",
+      "instructions_path": "../deepswe-delegation-ablation-2026-09/instructions/without-subagents.md",
+      "instructions_sha256": null,
+      "helpers": false,
+      "helper_model": null,
+      "helper_effort": null
+    }
+  ],
+  "tasks": [
+    {"id": "ts-boundary-validation", "language": "typescript", "split": "development", "status": "specification_only", "used_for_tuning": false},
+    {"id": "ts-cross-layer-feature", "language": "typescript", "split": "development", "status": "specification_only", "used_for_tuning": false},
+    {"id": "py-transaction-import", "language": "python", "split": "development", "status": "specification_only", "used_for_tuning": false},
+    {"id": "py-compatible-refactor", "language": "python", "split": "development", "status": "specification_only", "used_for_tuning": false},
+    {"id": "go-cancellation-cleanup", "language": "go", "split": "development", "status": "specification_only", "used_for_tuning": false},
+    {"id": "go-independent-adapters", "language": "go", "split": "development", "status": "specification_only", "used_for_tuning": false}
+  ],
+  "runtime": {
+    "root_model": null,
+    "root_effort": null,
+    "cli_version": null,
+    "author_seconds": null,
+    "grader_seconds": null,
+    "runtime_control_evidence": null,
+    "prompt_parity_evidence": null,
+    "accounting_evidence": null,
+    "rate_card_sha256": null,
+    "speed": "standard",
+    "deadline_disclosed": true,
+    "submission": "committed_patch",
+    "git_identity": {"name": "Benchmark Agent", "email": "benchmark@example.invalid"}
+  },
+  "budget": {
+    "approved": false,
+    "approval_reference": null,
+    "total_credit_limit": null,
+    "per_attempt_credit_reserve": null,
+    "probe_credit_allowance": null,
+    "max_scored_starts": 24
+  }
+}
