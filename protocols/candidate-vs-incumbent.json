@@ -29,7 +29,8 @@
   },
   "submission": {
     "deadline_disclosed": true,
-    "commit_required": true,
+    "commit_required": false,
+    "mode": "workspace_snapshot",
     "identity": "ArcanEdge Benchmark <benchmark@example.invalid>"
   },
   "policy": {
@@ -41,7 +42,7 @@
     "automatic_retries": false,
     "protected_confirmation_required": true
   },
-  "note": "Design template only. Counts are illustrative and not authorized, frozen schedules, sufficient sample sizes, or validated runtime settings.",
+  "note": "Unapproved design template. The implemented development adapter grades final workspace snapshots under an explicit deadline, independently of commit timing. Historical committed-submission studies are unchanged. Counts are illustrative, not authorized schedules or power guarantees.",
   "protocol_id": "candidate-vs-incumbent",
   "comparison_kind": "instruction_revision",
   "conditions": [

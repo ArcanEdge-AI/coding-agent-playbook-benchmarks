@@ -1,0 +1,428 @@
+{
+  "schema_version": 1,
+  "status": "local_controls_passed",
+  "catalog_sha256": "d8b5906cfe8c4506063c6d3e2e6b182fd8eceaf8f5a2fea33d2edb7ac768f051",
+  "evaluator_bundle_sha256": "34d558db2b6994700f32f7c58a0e46b34864d02a96ae5a417ce388a3255108e9",
+  "task_count": 12,
+  "control_count": 46,
+  "controls": [
+    {
+      "task_id": "FIX-01",
+      "control": "noop",
+      "expected_functional_pass": false,
+      "functional_pass": false,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 7
+    },
+    {
+      "task_id": "FIX-01",
+      "control": "reference",
+      "expected_functional_pass": true,
+      "functional_pass": true,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 7
+    },
+    {
+      "task_id": "FIX-01",
+      "control": "alternative",
+      "expected_functional_pass": true,
+      "functional_pass": true,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 7
+    },
+    {
+      "task_id": "FIX-01",
+      "control": "incorrect-has-next",
+      "expected_functional_pass": false,
+      "functional_pass": false,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 7
+    },
+    {
+      "task_id": "FIX-02",
+      "control": "noop",
+      "expected_functional_pass": false,
+      "functional_pass": false,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 4
+    },
+    {
+      "task_id": "FIX-02",
+      "control": "reference",
+      "expected_functional_pass": true,
+      "functional_pass": true,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 4
+    },
+    {
+      "task_id": "FIX-02",
+      "control": "alternative",
+      "expected_functional_pass": true,
+      "functional_pass": true,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 4
+    },
+    {
+      "task_id": "FIX-02",
+      "control": "incorrect-offset-adjustment",
+      "expected_functional_pass": false,
+      "functional_pass": false,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 4
+    },
+    {
+      "task_id": "FEAT-01",
+      "control": "noop",
+      "expected_functional_pass": false,
+      "functional_pass": false,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 4
+    },
+    {
+      "task_id": "FEAT-01",
+      "control": "reference",
+      "expected_functional_pass": true,
+      "functional_pass": true,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 4
+    },
+    {
+      "task_id": "FEAT-01",
+      "control": "alternative",
+      "expected_functional_pass": true,
+      "functional_pass": true,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 4
+    },
+    {
+      "task_id": "FEAT-01",
+      "control": "unfiltered-count",
+      "expected_functional_pass": false,
+      "functional_pass": false,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 4
+    },
+    {
+      "task_id": "FEAT-02",
+      "control": "noop",
+      "expected_functional_pass": false,
+      "functional_pass": false,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 3
+    },
+    {
+      "task_id": "FEAT-02",
+      "control": "reference",
+      "expected_functional_pass": true,
+      "functional_pass": true,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 3
+    },
+    {
+      "task_id": "FEAT-02",
+      "control": "alternative",
+      "expected_functional_pass": true,
+      "functional_pass": true,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 3
+    },
+    {
+      "task_id": "FEAT-02",
+      "control": "ignores-key-conflict",
+      "expected_functional_pass": false,
+      "functional_pass": false,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 3
+    },
+    {
+      "task_id": "REF-01",
+      "control": "noop",
+      "expected_functional_pass": false,
+      "functional_pass": false,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 3
+    },
+    {
+      "task_id": "REF-01",
+      "control": "reference",
+      "expected_functional_pass": true,
+      "functional_pass": true,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 3
+    },
+    {
+      "task_id": "REF-01",
+      "control": "alternative",
+      "expected_functional_pass": true,
+      "functional_pass": true,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 3
+    },
+    {
+      "task_id": "REF-01",
+      "control": "owner-check-removed",
+      "expected_functional_pass": false,
+      "functional_pass": false,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 3
+    },
+    {
+      "task_id": "REF-02",
+      "control": "noop",
+      "expected_functional_pass": false,
+      "functional_pass": false,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 5
+    },
+    {
+      "task_id": "REF-02",
+      "control": "reference",
+      "expected_functional_pass": true,
+      "functional_pass": true,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 5
+    },
+    {
+      "task_id": "REF-02",
+      "control": "alternative",
+      "expected_functional_pass": true,
+      "functional_pass": true,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 5
+    },
+    {
+      "task_id": "REF-02",
+      "control": "accepts-boolean-quantities",
+      "expected_functional_pass": false,
+      "functional_pass": false,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 5
+    },
+    {
+      "task_id": "STATE-01",
+      "control": "noop",
+      "expected_functional_pass": false,
+      "functional_pass": false,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 4
+    },
+    {
+      "task_id": "STATE-01",
+      "control": "reference",
+      "expected_functional_pass": true,
+      "functional_pass": true,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 4
+    },
+    {
+      "task_id": "STATE-01",
+      "control": "alternative",
+      "expected_functional_pass": true,
+      "functional_pass": true,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 4
+    },
+    {
+      "task_id": "STATE-01",
+      "control": "rejects-empty-identifiers",
+      "expected_functional_pass": false,
+      "functional_pass": false,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 4
+    },
+    {
+      "task_id": "STATE-03",
+      "control": "noop",
+      "expected_functional_pass": false,
+      "functional_pass": false,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 3
+    },
+    {
+      "task_id": "STATE-03",
+      "control": "reference",
+      "expected_functional_pass": true,
+      "functional_pass": true,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 3
+    },
+    {
+      "task_id": "STATE-03",
+      "control": "alternative",
+      "expected_functional_pass": true,
+      "functional_pass": true,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 3
+    },
+    {
+      "task_id": "STATE-03",
+      "control": "loses-active-work-on-shutdown",
+      "expected_functional_pass": false,
+      "functional_pass": false,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 3
+    },
+    {
+      "task_id": "TEST-01",
+      "control": "noop",
+      "expected_functional_pass": false,
+      "functional_pass": false,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 5
+    },
+    {
+      "task_id": "TEST-01",
+      "control": "reference",
+      "expected_functional_pass": true,
+      "functional_pass": true,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 5
+    },
+    {
+      "task_id": "TEST-01",
+      "control": "alternative",
+      "expected_functional_pass": true,
+      "functional_pass": true,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 5
+    },
+    {
+      "task_id": "TEST-03",
+      "control": "noop",
+      "expected_functional_pass": false,
+      "functional_pass": false,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 4
+    },
+    {
+      "task_id": "TEST-03",
+      "control": "reference",
+      "expected_functional_pass": true,
+      "functional_pass": true,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 4
+    },
+    {
+      "task_id": "TEST-03",
+      "control": "alternative",
+      "expected_functional_pass": true,
+      "functional_pass": true,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 4
+    },
+    {
+      "task_id": "FLOW-01",
+      "control": "noop",
+      "expected_functional_pass": false,
+      "functional_pass": false,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 6
+    },
+    {
+      "task_id": "FLOW-01",
+      "control": "reference",
+      "expected_functional_pass": true,
+      "functional_pass": true,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 6
+    },
+    {
+      "task_id": "FLOW-01",
+      "control": "alternative",
+      "expected_functional_pass": true,
+      "functional_pass": true,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 6
+    },
+    {
+      "task_id": "FLOW-01",
+      "control": "always-includes-closed",
+      "expected_functional_pass": false,
+      "functional_pass": false,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 6
+    },
+    {
+      "task_id": "FLOW-04",
+      "control": "noop",
+      "expected_functional_pass": false,
+      "functional_pass": false,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 3
+    },
+    {
+      "task_id": "FLOW-04",
+      "control": "reference",
+      "expected_functional_pass": true,
+      "functional_pass": true,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 3
+    },
+    {
+      "task_id": "FLOW-04",
+      "control": "alternative",
+      "expected_functional_pass": true,
+      "functional_pass": true,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 3
+    },
+    {
+      "task_id": "FLOW-04",
+      "control": "case-insensitive-dedup",
+      "expected_functional_pass": false,
+      "functional_pass": false,
+      "regression_pass": true,
+      "control_passed": true,
+      "checks": 3
+    }
+  ],
+  "model_calls": 0,
+  "runtime_isolation_validated": false,
+  "inference_authorized": false,
+  "scope": "Trusted local reference/no-op/alternative/mutant controls; not agent outcomes."
+}

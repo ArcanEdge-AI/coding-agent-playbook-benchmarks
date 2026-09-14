@@ -1,0 +1,277 @@
+{
+  "schema_version": 1,
+  "suite_id": "arcanedge-development-v1",
+  "status": "development_only",
+  "inference_authorized": false,
+  "confirmation_tasks": 0,
+  "smoke_task_ids": [
+    "FIX-01",
+    "FEAT-02",
+    "STATE-01",
+    "FLOW-01"
+  ],
+  "tasks": [
+    {
+      "id": "FIX-01",
+      "version": 1,
+      "language": "typescript",
+      "source_family": "paging",
+      "split": "development",
+      "title": "Correct page boundaries",
+      "delegation_suitability": "small",
+      "task": "Repair pagination. Pages are one-based positive integers; size is a positive integer. Return items, total, and hasNext. A full page contains size items; the final partial page contains every remaining item; past-end/empty pages are empty. Invalid page/size returns {error:\"invalid pagination\"}.\n\nImplement the requested change; do not merely describe it. Preserve existing behavior not explicitly changed. You have 1,200 seconds including validation. The deliverable is the final workspace snapshot; no commit is required. Preserve supplied user edits. Do not use network services or add dependencies. Report the checks you actually ran and any remaining limitations.",
+      "files": {
+        "main.ts": "import { readFileSync } from 'node:fs';\nimport { handle } from './service.ts';\nconst input = JSON.parse(readFileSync(0, 'utf8'));\nconsole.log(JSON.stringify(handle(input)));\n",
+        "service.ts": "export function handle(x: {items: number[], page: number, size: number}) {\n  if (!Number.isInteger(x.page) || x.page < 1 || !Number.isInteger(x.size) || x.size < 1) return {error:'invalid pagination'};\n  const start=(x.page-1)*x.size;\n  return {items:x.items.slice(start,start+x.size-1), total:x.items.length, hasNext:start+x.size<x.items.length};\n}\n"
+      },
+      "user_overlay": {},
+      "submission_mode": "workspace",
+      "author_seconds": 1200,
+      "evaluator_sha256": "fd1449e01e9b979ad4c0662d46d7b403ad838593630c7de98b3b145c66f7e1ad",
+      "control_scope": "synthetic development fixture; not a confirmation case",
+      "package_sha256": "f15ffb6b020d00624168a9320996ac4466316a06f227b6b1b30d5b5d5db76069",
+      "checks_sha256": "d4cdb99ff604716da6b55616f5eab1db0c405e4561c7cf0fed7f863b4efc02c6"
+    },
+    {
+      "id": "FIX-02",
+      "version": 1,
+      "language": "python",
+      "source_family": "daily-report",
+      "split": "development",
+      "title": "Select records by local calendar day",
+      "delegation_suitability": "small",
+      "task": "Fix report selection. All timestamps are offset-aware ISO 8601, possibly ending Z. Select IDs whose instant falls on day in a fixed timezone offset_minutes east of UTC. Preserve input order; include both local-day endpoints appropriately (midnight inclusive, next midnight exclusive). This is a fixed-offset contract, not a daylight-saving timezone database.\n\nImplement the requested change; do not merely describe it. Preserve existing behavior not explicitly changed. You have 1,200 seconds including validation. The deliverable is the final workspace snapshot; no commit is required. Preserve supplied user edits. Do not use network services or add dependencies. Report the checks you actually ran and any remaining limitations.",
+      "files": {
+        "app.py": "import json,sys\nfrom report import select\nprint(json.dumps(select(json.load(sys.stdin))))\n",
+        "report.py": "from datetime import datetime, timezone, timedelta\n\ndef select(request):\n    offset=timezone(timedelta(minutes=request['offset_minutes']))\n    selected=[]\n    for row in request['rows']:\n        instant=datetime.fromisoformat(row['at'].replace('Z','+00:00'))\n        if instant.astimezone(timezone.utc).date().isoformat()==request['day']:\n            selected.append(row['id'])\n    return selected\n"
+      },
+      "user_overlay": {},
+      "submission_mode": "workspace",
+      "author_seconds": 1200,
+      "evaluator_sha256": "e7a072e05c6888131dd7e2409b598cc56b78c148c71c309d718eabf778505307",
+      "control_scope": "synthetic development fixture; not a confirmation case",
+      "package_sha256": "39ec0681b244e2b1e308554f95f160c09d26c3b74ef6948855166d7605ec1cac",
+      "checks_sha256": "1c940d037d9a97cb9d68f7f21763de2e3038c42bebf6e62efaa9e58b7f73802a"
+    },
+    {
+      "id": "FEAT-01",
+      "version": 1,
+      "language": "typescript",
+      "source_family": "directory-reporting",
+      "split": "development",
+      "title": "Filter directory consistently",
+      "delegation_suitability": "potentially_decomposable",
+      "task": "Add optional status filtering across the service/store. Only open or closed are valid supplied filters; invalid values return {error:\"invalid status\"}. Omitted filter preserves all rows. Return rows sorted by numeric id and count of filtered rows. Do not mutate input.\n\nImplement the requested change; do not merely describe it. Preserve existing behavior not explicitly changed. You have 1,200 seconds including validation. The deliverable is the final workspace snapshot; no commit is required. Preserve supplied user edits. Do not use network services or add dependencies. Report the checks you actually ran and any remaining limitations.",
+      "files": {
+        "main.ts": "import { readFileSync } from 'node:fs';\nimport { handle } from './service.ts';\nconst input = JSON.parse(readFileSync(0, 'utf8'));\nconsole.log(JSON.stringify(handle(input)));\n",
+        "service.ts": "import { list } from './store.ts';\nexport function handle(x:any) {return {rows:list(x.rows), count:x.rows.length};}\n",
+        "store.ts": "export function list(rows:any[]) { return rows.slice().sort((a,b)=>a.id-b.id); }\n"
+      },
+      "user_overlay": {},
+      "submission_mode": "workspace",
+      "author_seconds": 1200,
+      "evaluator_sha256": "a45b27011400a78204791bf875a2427dc7196432b655d4863b2c6affa42adbe6",
+      "control_scope": "synthetic development fixture; not a confirmation case",
+      "package_sha256": "34afc19ecc6b29beb192a914dddcff35d009b186b0cbdeba1b7572280bae87f4",
+      "checks_sha256": "a3d45abdfdbf9bcfd465f156c8d3235d0de9861bf7be4a66a46813e3e5f3db18"
+    },
+    {
+      "id": "FEAT-02",
+      "version": 1,
+      "language": "python",
+      "source_family": "job-registration",
+      "split": "development",
+      "title": "Idempotent job registration",
+      "delegation_suitability": "potentially_decomposable",
+      "task": "Implement keyed job creation over a sequence of requests. Equal keys and structurally equal JSON payloads return the original id/payload without allocating another id. Equal key with a different payload returns {error:\"conflict\"}; it must not replace the job or consume an id. First creations receive consecutive IDs starting 1. Distinct keys may share payloads. Empty input returns [].\n\nImplement the requested change; do not merely describe it. Preserve existing behavior not explicitly changed. You have 1,200 seconds including validation. The deliverable is the final workspace snapshot; no commit is required. Preserve supplied user edits. Do not use network services or add dependencies. Report the checks you actually ran and any remaining limitations.",
+      "files": {
+        "app.py": "import json,sys\nfrom jobs import create_all\nprint(json.dumps(create_all(json.load(sys.stdin))))\n",
+        "jobs.py": "def create_all(requests):\n    return [{'id':i+1,'payload':r['payload']} for i,r in enumerate(requests)]\n"
+      },
+      "user_overlay": {},
+      "submission_mode": "workspace",
+      "author_seconds": 1200,
+      "evaluator_sha256": "c7b791d0c7173bb92c45742af5eee9a34798e9b08219a389f3706108c407e4f4",
+      "control_scope": "synthetic development fixture; not a confirmation case",
+      "package_sha256": "1e01fb1bbe09e2c0fd5fa5ec148b9fc8e1e59231acfa745ab0027e12d575bbf2",
+      "checks_sha256": "d16bd8ae4001c4e25ff70cc07681ddfd02478d243b5711146d3a7b4aaf65bdd7"
+    },
+    {
+      "id": "REF-01",
+      "version": 1,
+      "language": "typescript",
+      "source_family": "access-policy",
+      "split": "development",
+      "title": "Consolidate access policy",
+      "delegation_suitability": "potentially_decomposable",
+      "task": "Consolidate duplicated API/view authorization behind exported canAccess in policy.ts. Both consumers must use that shared implementation. Add policy to each returned result alongside api/view. Admin can read/write; member can read and can write owned records; guests and unknown roles are denied. Unknown actions are denied for everyone. owner must be Boolean true to grant ownership. Human review checks actual consolidation, not only matching outputs.\n\nImplement the requested change; do not merely describe it. Preserve existing behavior not explicitly changed. You have 1,200 seconds including validation. The deliverable is the final workspace snapshot; no commit is required. Preserve supplied user edits. Do not use network services or add dependencies. Report the checks you actually ran and any remaining limitations.",
+      "files": {
+        "main.ts": "import { readFileSync } from 'node:fs';\nimport { handle } from './service.ts';\nconst input = JSON.parse(readFileSync(0, 'utf8'));\nconsole.log(JSON.stringify(handle(input)));\n",
+        "service.ts": "import { api } from './api.ts';\nimport { view } from './view.ts';\nexport function handle(x:any) { return x.map((r:any)=>({api:api(r),view:view(r),policy:null})); }\n",
+        "api.ts": "export function api(r:any) { return r.role==='admin' || (r.role==='member' && (r.action==='read' || r.owner)); }\n",
+        "view.ts": "export function view(r:any) { return r.role==='admin' || (r.role==='member' && (r.action==='read' || r.owner)); }\n"
+      },
+      "user_overlay": {},
+      "submission_mode": "workspace",
+      "author_seconds": 1200,
+      "evaluator_sha256": "7696418af63687b72858f5fe47c0c2c684dd909b319b8199baec81ab7e5e92ec",
+      "control_scope": "synthetic development fixture; not a confirmation case",
+      "package_sha256": "7cdfff7ffa79bce19095310de7bbc8c9454973d8cfd5ca3cab1f16ce5e8f6fe7",
+      "checks_sha256": "1a31cae92e0417e4214d7f20419d8a284576fc8f02762fca25d95fc03d5b193a"
+    },
+    {
+      "id": "REF-02",
+      "version": 1,
+      "language": "python",
+      "source_family": "quantity-format",
+      "split": "development",
+      "title": "Retire legacy quantities",
+      "delegation_suitability": "potentially_decomposable",
+      "task": "Remove the retired semicolon-delimited quantity format and its implementation. The only supported input is a JSON array of nonnegative integers (not booleans). Return its sum; empty array yields 0. Every other input, including legacy strings, returns {error:\"invalid quantities\"}. Keep the public decode entry point. Review will check dead-path removal and scope discipline.\n\nImplement the requested change; do not merely describe it. Preserve existing behavior not explicitly changed. You have 1,200 seconds including validation. The deliverable is the final workspace snapshot; no commit is required. Preserve supplied user edits. Do not use network services or add dependencies. Report the checks you actually ran and any remaining limitations.",
+      "files": {
+        "app.py": "import json,sys\nfrom quantity import decode\nprint(json.dumps(decode(json.load(sys.stdin))))\n",
+        "quantity.py": "def decode(value):\n    if isinstance(value,str) and ';' in value:\n        return sum(int(v) for v in value.split(';'))\n    if isinstance(value,list) and all(type(v) is int and v>=0 for v in value): return sum(value)\n    return {'error':'invalid quantities'}\n"
+      },
+      "user_overlay": {},
+      "submission_mode": "workspace",
+      "author_seconds": 1200,
+      "evaluator_sha256": "14dbcb6a59a30731e1ba6a4864ddae28dc33da4805cf1512fe7b9d174972096f",
+      "control_scope": "synthetic development fixture; not a confirmation case",
+      "package_sha256": "2dabaece75b3fc0b977620200795be95c2ab331daa356865a8992ea008b492e9",
+      "checks_sha256": "159a41ac3ee557ff05a2d9bf97e250aa4fbc66710df904f81a5f9c5d18d32a8c"
+    },
+    {
+      "id": "STATE-01",
+      "version": 1,
+      "language": "go",
+      "source_family": "claim-registry",
+      "split": "development",
+      "title": "Atomic concurrent claims",
+      "delegation_suitability": "potentially_decomposable",
+      "task": "Repair Claims.Claim so exactly one concurrent caller claims each string ID. A claimed ID remains claimed for the registry lifetime; independent IDs can each succeed. Preserve the existing API and sorted CLI result. Empty string is a valid ID. Calls must be race-free; the evaluator builds this task with the Go race detector.\n\nImplement the requested change; do not merely describe it. Preserve existing behavior not explicitly changed. You have 1,200 seconds including validation. The deliverable is the final workspace snapshot; no commit is required. Preserve supplied user edits. Do not use network services or add dependencies. Report the checks you actually ran and any remaining limitations.",
+      "files": {
+        "go.mod": "module fixture\n\ngo 1.23\n",
+        "main.go": "package main\nimport(\"encoding/json\";\"os\";\"sync\";\"sort\")\nfunc main(){var ids []string;json.NewDecoder(os.Stdin).Decode(&ids);s:=NewClaims();var wg sync.WaitGroup;var mu sync.Mutex;out:=[]string{};for _,id:=range ids{wg.Add(1);go func(id string){defer wg.Done();if s.Claim(id){mu.Lock();out=append(out,id);mu.Unlock()}}(id)};wg.Wait();sort.Strings(out);json.NewEncoder(os.Stdout).Encode(out)}\n",
+        "claims.go": "package main\nimport \"sync\"\ntype Claims struct { mu sync.Mutex; seen map[string]bool }\nfunc NewClaims()*Claims{return &Claims{seen:map[string]bool{}}}\nfunc(s *Claims)Claim(id string)bool{s.mu.Lock();defer s.mu.Unlock();s.seen[id]=true;return true}\n"
+      },
+      "user_overlay": {},
+      "submission_mode": "workspace",
+      "author_seconds": 1200,
+      "evaluator_sha256": "6f9a7afa7ef4f427a97a9db1a81d4ce4ffc7a67f297c0ec5a5f86cddaa679443",
+      "control_scope": "synthetic development fixture; not a confirmation case",
+      "package_sha256": "6435fff369a5556fae1bcdd753daaf22248e845c72d8b1db189bea54756765b0",
+      "checks_sha256": "56cc351677987e3dd66395d268b10bd849693cfd48dacfef686f0ca9eb8d973a"
+    },
+    {
+      "id": "STATE-03",
+      "version": 1,
+      "language": "go",
+      "source_family": "bounded-scheduler",
+      "split": "development",
+      "title": "Bound queue admission and shutdown",
+      "delegation_suitability": "potentially_decomposable",
+      "task": "Implement the deterministic scheduler state machine (not real OS workers). limit is a positive integer. submit admits unique active/pending IDs FIFO up to limit and queues the rest. finish removes an active ID and fills available capacity FIFO; finishing an unknown or pending ID is a no-op. shutdown closes admission, drops pending work, and retains active work until finished. Ignore new submissions after shutdown. Return an independent state snapshot after every event; arrays must be [] rather than null. Completed IDs may be submitted again.\n\nImplement the requested change; do not merely describe it. Preserve existing behavior not explicitly changed. You have 1,200 seconds including validation. The deliverable is the final workspace snapshot; no commit is required. Preserve supplied user edits. Do not use network services or add dependencies. Report the checks you actually ran and any remaining limitations.",
+      "files": {
+        "go.mod": "module fixture\n\ngo 1.23\n",
+        "main.go": "package main\nimport(\"encoding/json\";\"os\")\ntype Event struct { Op string `json:\"op\"`; ID string `json:\"id\"` }\ntype Request struct { Limit int `json:\"limit\"`; Events []Event `json:\"events\"` }\ntype State struct { Active []string `json:\"active\"`; Pending []string `json:\"pending\"`; Closed bool `json:\"closed\"` }\nfunc main(){var r Request;json.NewDecoder(os.Stdin).Decode(&r);json.NewEncoder(os.Stdout).Encode(schedule(r))}\n",
+        "scheduler.go": "package main\nfunc schedule(r Request)[]State{out:=[]State{};s:=State{Active:[]string{},Pending:[]string{}};for _,e:=range r.Events{if e.Op==\"submit\"{s.Active=append(s.Active,e.ID)};out=append(out,State{append([]string{},s.Active...),append([]string{},s.Pending...),s.Closed})};return out}\n"
+      },
+      "user_overlay": {},
+      "submission_mode": "workspace",
+      "author_seconds": 1200,
+      "evaluator_sha256": "7d1c7157eddadcba6b863a6a458ef9e4377356ce659833d668393491a3e59e72",
+      "control_scope": "synthetic development fixture; not a confirmation case",
+      "package_sha256": "823fe5147ff9f22f842b043d917c35cfdaca0b912acbcd588db3cb92965c603f",
+      "checks_sha256": "428d8e9cbafbbc3bbeccd74b6a0319f440bd778bbb60972d44f193c9b67fe095"
+    },
+    {
+      "id": "TEST-01",
+      "version": 1,
+      "language": "python",
+      "source_family": "ledger-tests",
+      "split": "development",
+      "title": "Add defect-sensitive ledger tests",
+      "delegation_suitability": "potentially_decomposable",
+      "task": "Add standard-library unittest regression tests for ledger.total. Edit only files under tests/. Preserve the existing empty-input test. Matching client rows sum integer cents (including repeated equal values); other clients are ignored before validation. Matching negative, Boolean, or noninteger cents raise ValueError. Tests must catch wrong-client inclusion, accepting negatives, and off-by-one totals while passing the correct implementation. No dependencies or network.\n\nImplement the requested change; do not merely describe it. Preserve existing behavior not explicitly changed. You have 1,200 seconds including validation. The deliverable is the final workspace snapshot; no commit is required. Preserve supplied user edits. Do not use network services or add dependencies. Report the checks you actually ran and any remaining limitations.",
+      "files": {
+        "ledger.py": "def total(rows,client):\n    result=0\n    for row in rows:\n        if row['client']==client:\n            cents=row['cents']\n            if type(cents) is not int or cents<0: raise ValueError('invalid cents')\n            result+=cents\n    return result\n",
+        "tests/test_ledger.py": "import unittest\nfrom ledger import total\nclass LedgerTests(unittest.TestCase):\n    def test_empty(self): self.assertEqual(total([], 'a'),0)\n"
+      },
+      "user_overlay": {},
+      "submission_mode": "workspace",
+      "author_seconds": 1200,
+      "evaluator_sha256": "a4813dd91936804c1ca1a58796d86ed9249568b6ad9782d7450ba10126c323c9",
+      "control_scope": "synthetic development fixture; not a confirmation case",
+      "package_sha256": "ed511ec3e96f5892a9144ee7eed4edc9cbccbb37d2e54cc436ef0bd9f4e1b11f",
+      "checks_sha256": "a40171ecd2ab9e55119770a712d70062aaf05879783cbb9f9f69db0466b92934"
+    },
+    {
+      "id": "TEST-03",
+      "version": 1,
+      "language": "python",
+      "source_family": "transport-tests",
+      "split": "development",
+      "title": "Test failures without live services",
+      "delegation_suitability": "potentially_decomposable",
+      "task": "Add unittest tests for client.fetch using injected deterministic fake transports. Edit only tests/. Preserve the success test. Retry only TimeoutError up to attempts total calls; success returns immediately; final timeout propagates; ValueError from the transport propagates without retry. Invalid attempts (not a positive integer) raise ValueError before a call. Detect no-retry, retrying non-timeouts, and extra-attempt defects without real networking or sleeps.\n\nImplement the requested change; do not merely describe it. Preserve existing behavior not explicitly changed. You have 1,200 seconds including validation. The deliverable is the final workspace snapshot; no commit is required. Preserve supplied user edits. Do not use network services or add dependencies. Report the checks you actually ran and any remaining limitations.",
+      "files": {
+        "client.py": "def fetch(transport,attempts=3):\n    if type(attempts) is not int or attempts<1: raise ValueError('invalid attempts')\n    for i in range(attempts):\n        try: return transport()\n        except TimeoutError:\n            if i==attempts-1: raise\n",
+        "tests/test_client.py": "import unittest\nfrom client import fetch\nclass ClientTests(unittest.TestCase):\n    def test_success(self): self.assertEqual(fetch(lambda: 'ok'),'ok')\n"
+      },
+      "user_overlay": {},
+      "submission_mode": "workspace",
+      "author_seconds": 1200,
+      "evaluator_sha256": "305a94bf6a34857fe1d235653c6677c1fe7c9bd99dbb74597440874ed11f6e1e",
+      "control_scope": "synthetic development fixture; not a confirmation case",
+      "package_sha256": "59721ca66de49b82d7bc841b9f1cfbcc408f5c26eb983e5d06aa7820d0a8161c",
+      "checks_sha256": "c277645d037819438b5b0c337a8e62865098c6cc179a57b806598591be99290b"
+    },
+    {
+      "id": "FLOW-01",
+      "version": 1,
+      "language": "typescript",
+      "source_family": "directory-reporting",
+      "split": "development",
+      "title": "Integrate project summary endpoint",
+      "delegation_suitability": "potentially_decomposable",
+      "task": "Implement action summary through the service and report modules. Group eligible rows by project, returning project/count/totalCents sorted by project using JavaScript string order. Exclude closed rows by default; includeClosed true includes them. Supplied non-Boolean includeClosed returns {error:\"invalid includeClosed\"}. Preserve list sorting and unknown-action behavior. Amounts are integer cents; do not round or convert to floating currency. Empty summary is [].\n\nImplement the requested change; do not merely describe it. Preserve existing behavior not explicitly changed. You have 1,200 seconds including validation. The deliverable is the final workspace snapshot; no commit is required. Preserve supplied user edits. Do not use network services or add dependencies. Report the checks you actually ran and any remaining limitations.",
+      "files": {
+        "main.ts": "import { readFileSync } from 'node:fs';\nimport { handle } from './service.ts';\nconst input = JSON.parse(readFileSync(0, 'utf8'));\nconsole.log(JSON.stringify(handle(input)));\n",
+        "service.ts": "import { sorted } from './store.ts';\nexport function handle(x:any) {if(x.action==='list')return sorted(x.rows);return {error:'unknown action'};}\n",
+        "store.ts": "export function sorted(rows:any[]) {return rows.slice().sort((a,b)=>a.id-b.id);}\n",
+        "report.ts": "export function summary(rows:any[],includeClosed:boolean) {return [];}\n"
+      },
+      "user_overlay": {},
+      "submission_mode": "workspace",
+      "author_seconds": 1200,
+      "evaluator_sha256": "f6e29a23c446d3e07dda9e9aac7a3e1333aa9eb4b8c0f1bb116423efcab690fd",
+      "control_scope": "synthetic development fixture; not a confirmation case",
+      "package_sha256": "2d5c4e4fa93ddd1fa85473d83f66d1887e2c1c498226d0f1a5323471ce3b3c74",
+      "checks_sha256": "5a423a994360ce13c87d27827de1e68b2ddc35e7a9c957dd86c6e58d9a359c4a"
+    },
+    {
+      "id": "FLOW-04",
+      "version": 1,
+      "language": "go",
+      "source_family": "user-workspace",
+      "split": "development",
+      "title": "Normalize input without losing user edits",
+      "delegation_suitability": "potentially_decomposable",
+      "task": "Implement normalization of incoming string labels: trim Unicode surrounding whitespace, remove empty labels, deduplicate exact trimmed labels case-sensitively, preserving first occurrence order. Empty input returns []. Preserve operator-notes.txt exactly; it is a pre-existing untracked user edit. Do not stage, delete, replace, or incorporate those notes into code. Preserve unrelated workspace content.\n\nImplement the requested change; do not merely describe it. Preserve existing behavior not explicitly changed. You have 1,200 seconds including validation. The deliverable is the final workspace snapshot; no commit is required. Preserve supplied user edits. Do not use network services or add dependencies. Report the checks you actually ran and any remaining limitations.",
+      "files": {
+        "go.mod": "module fixture\n\ngo 1.23\n",
+        "main.go": "package main\nimport(\"encoding/json\";\"os\")\nfunc main(){var values []string;json.NewDecoder(os.Stdin).Decode(&values);json.NewEncoder(os.Stdout).Encode(normalize(values))}\n",
+        "normalize.go": "package main\nfunc normalize(values []string)[]string{return values}\n"
+      },
+      "user_overlay": {
+        "operator-notes.txt": "User-owned draft. Keep this exact file, including this newline.\n"
+      },
+      "submission_mode": "workspace",
+      "author_seconds": 1200,
+      "evaluator_sha256": "fb1094fcd505d5781ecf7661e7715ab7e2035e87d38ffbf4a52045d09ad1b1b5",
+      "control_scope": "synthetic development fixture; not a confirmation case",
+      "package_sha256": "592260671233e05ad7690650e3ee4d4758dea92ed2883fde18d2f5f80e3865b2",
+      "checks_sha256": "88c13743e0413133d04de9672235044aea618e5a28f320575e19acbc031e9637"
+    }
+  ]
+}

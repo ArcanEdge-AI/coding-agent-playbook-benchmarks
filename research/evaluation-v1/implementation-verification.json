@@ -1,0 +1,27 @@
+{
+  "status": "offline_implementation_checked",
+  "tested_at_utc": "2026-09-14T03:39:43.590969+00:00",
+  "new_harness_unit_tests_passed": 54,
+  "grading_controls_passed": 46,
+  "grading_check_executions": 195,
+  "development_tasks": 12,
+  "model_calls": 0,
+  "docker_executed": false,
+  "native_codex_executed": false,
+  "protected_confirmation_tasks": 0,
+  "versions": {
+    "python": "3.13.5",
+    "node": "v22.16.0",
+    "go": "go version go1.23.2 linux/amd64"
+  },
+  "files_sha256": {
+    "benchmarks/v1/tasks/development.json": "94c3242071583d7ee796502a3c95d1c99d6aa139d7d3a63a9f890c1527d3e36d",
+    "protocols/candidate-vs-incumbent.json": "c646635e60d0d44262865bfa62f4e9d5a19191d35b71dbe15cb2eaa7723e0da6",
+    "protocols/initial-globals-delegation.json": "08ba025d88560e86ca438945b44f8839e3dc91a7aa5d750e541ff8a11b3a6ec5",
+    "research/evaluation-v1/development-controls.json": "39fc64fe723ea6d634ba6d93a75d7ea6d10f30226c3369bf60fb0b5f2c23c182",
+    "research/evaluation-v1/evaluator-bundle.json": "239e257e86654f9c8402fa677313d1f28728086e3729fa969d9c2c5499e4ada4",
+    "tools/benchmark/study.py": "9b461835ddae23dfd2cf45a4042c7603b91ffb6f4a2a5d261f7f6905606ba3fb",
+    "tools/benchmark/suite.py": "b7a91e5de1d010c34c0a94e53029ee53e35956517a8d6eafe607b2ebdc431ed7",
+    "tools/benchmark/test_execution.py": "eca229eb01e428aa637cb88196b018c2bdad98b2f211ee24e964fbd49d155b0a"
+  }
+}
