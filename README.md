@@ -33,6 +33,10 @@ Manifests may include a `waivers` array for failed required checks. Each waiver 
 
 This repository contains the green baseline plus the scoped, expiring-waiver feature used by [Benchmark 001](benchmark-001/TASK.md). Do not treat local test output as a benchmark result.
 
+## Instruction and skill research
+
+The [research archive](research/README.md) records the skill studies, their isolation correction, controlled global-instruction screens, known-answer coding calibration, and the completed [three-arm DeepSWE comparison](research/deepswe-2026-09/README.md). It includes instruction snapshots, compact results, source provenance, replay instructions, [credit accounting](research/deepswe-2026-09/credits.md), and both retained guides. The [continuation guide](research/CONTINUE.md) identifies the current evidence, portable tools, and the delegation experiment paused before scored execution. These studies are separate from the original Benchmark 001 fixture and do not alter its acceptance contract.
+
 ## License
 
 MIT. See [LICENSE](LICENSE).

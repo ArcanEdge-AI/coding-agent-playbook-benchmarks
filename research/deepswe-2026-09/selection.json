@@ -1,0 +1,55 @@
+{
+  "method": "minimum SHA256(seed + colon + task ID) within each language; prebuilt CPU tasks",
+  "seed": "deepswe-calibration-v1:2026-09-13",
+  "tasks": [
+    {
+      "id": "obsidian-linter-link-format-conversion",
+      "language": "typescript",
+      "repository": "https://github.com/platers/obsidian-linter",
+      "base_commit": "6393b3ab32a2ace1fc24d4b0f5e0f13a179c874f",
+      "title": "Add link format conversion between wiki and markdown syntax",
+      "image": "public.ecr.aws/d3j8x8q7/swe-bench-202605:kh7anfdjd1c4e5ejxncny0j1ed82xjm4-v1.1",
+      "gpus": 0,
+      "upstream_agent_timeout": 10800.0
+    },
+    {
+      "id": "python-statemachine-state-data-scoping",
+      "language": "python",
+      "repository": "https://github.com/fgmacedo/python-statemachine",
+      "base_commit": "8d17ba9f6ba8420cf05fddb94013bc221ed9a222",
+      "title": "Add scoped state data to state machine callbacks and history",
+      "image": "public.ecr.aws/d3j8x8q7/swe-bench-202605:kh719np6e210pf8skawv132rw183pfyy-v1.1",
+      "gpus": 0,
+      "upstream_agent_timeout": 10800.0,
+      "python_source_verified": true
+    },
+    {
+      "id": "kcp-go-multiplexed-kcp-streams",
+      "language": "go",
+      "repository": "https://github.com/xtaci/kcp-go",
+      "base_commit": "56b1fffecd743df1e7490235e69b51c44701f34c",
+      "title": "Add multiplexed ordered streams over KCP",
+      "image": "public.ecr.aws/d3j8x8q7/swe-bench-202605:kh72w47mwm321wh9xj47vskc8d822e9t-v1.1",
+      "gpus": 0,
+      "upstream_agent_timeout": 10800.0
+    }
+  ],
+  "holdout_excluded_repositories": [
+    "https://github.com/platers/obsidian-linter",
+    "https://github.com/fgmacedo/python-statemachine",
+    "https://github.com/xtaci/kcp-go"
+  ],
+  "amendment": {
+    "replaced": {
+      "id": "koota-entity-snapshot-rollback",
+      "language": "python",
+      "repository": "https://github.com/pmndrs/koota",
+      "base_commit": "72ebef44b8e024d877250f055eea60cdfaa4506",
+      "title": "Add entity snapshot and rollback APIs to Koota",
+      "image": "public.ecr.aws/d3j8x8q7/swe-bench-202605:kh71b98xenay7p45357036xq5x82tcdf-v1.1",
+      "gpus": 0,
+      "upstream_agent_timeout": 10800.0
+    },
+    "reason": "Python metadata contradicted TypeScript source; no inference performed"
+  }
+}

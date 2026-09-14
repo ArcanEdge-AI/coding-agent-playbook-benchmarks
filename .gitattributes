@@ -1,0 +1,4 @@
+# Research snapshots and checksums require identical bytes on every platform.
+research/** -text whitespace=cr-at-eol
+# Patch context deliberately contains whitespace from preserved source files.
+research/**/*.patch -whitespace

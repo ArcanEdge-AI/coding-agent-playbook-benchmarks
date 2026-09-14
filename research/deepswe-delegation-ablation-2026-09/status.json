@@ -1,0 +1,38 @@
+{
+  "state": "paused_by_user_for_cost",
+  "scored_attempts_started": 0,
+  "planned_scored_attempts": 48,
+  "automatic_resume": false,
+  "coding_results": null,
+  "installed_globals_modified": false,
+  "capability_probes": [
+    {
+      "condition": "without-subagents",
+      "status": "completed",
+      "model": "gpt-5.6-luna",
+      "effort": "max",
+      "helpers": 0,
+      "model_response": "CONTROL_UNAVAILABLE",
+      "usage": {
+        "input_tokens": 12984,
+        "cached_input_tokens": 0,
+        "output_tokens": 217,
+        "reasoning_output_tokens": 208
+      },
+      "standard_credit_equivalent": 0.07143,
+      "claim_limit": "No observed helper in this probe; this alone does not establish runtime enforcement."
+    },
+    {
+      "condition": "current",
+      "status": "preflight_failed_before_inference",
+      "failure": "Native capability context mismatch",
+      "expected_marker": "<multi_agent_role>",
+      "inference_started": false,
+      "helpers": 0,
+      "claim_limit": "Harness preflight failure, not a coding or delegation-quality result."
+    }
+  ],
+  "next_gate": "Inspect exact model/runtime capability behavior and replace the over-specific preflight assertion; validate both settings before any scored run.",
+  "credit_budget_authorized": false,
+  "previous_budget_proposal": "48 scored roots; approximately 2800\u20133400 Standard credit equivalent; paused for cost"
+}
