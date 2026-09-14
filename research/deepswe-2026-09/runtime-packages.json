@@ -1,0 +1,578 @@
+[
+  {
+    "name": "aiofiles",
+    "version": "24.1.0"
+  },
+  {
+    "name": "aiohappyeyeballs",
+    "version": "2.6.1"
+  },
+  {
+    "name": "aiohttp",
+    "version": "3.13.5"
+  },
+  {
+    "name": "aiohttp-retry",
+    "version": "2.9.1"
+  },
+  {
+    "name": "aiosignal",
+    "version": "1.4.0"
+  },
+  {
+    "name": "annotated-doc",
+    "version": "0.0.4"
+  },
+  {
+    "name": "annotated-types",
+    "version": "0.7.0"
+  },
+  {
+    "name": "anthropic",
+    "version": "0.97.0"
+  },
+  {
+    "name": "anyio",
+    "version": "4.13.0"
+  },
+  {
+    "name": "attrs",
+    "version": "26.1.0"
+  },
+  {
+    "name": "botocore",
+    "version": "1.43.11"
+  },
+  {
+    "name": "cachetools",
+    "version": "6.2.6"
+  },
+  {
+    "name": "cbor2",
+    "version": "5.9.0"
+  },
+  {
+    "name": "certifi",
+    "version": "2026.4.22"
+  },
+  {
+    "name": "cffi",
+    "version": "2.0.0"
+  },
+  {
+    "name": "charset-normalizer",
+    "version": "3.4.7"
+  },
+  {
+    "name": "claude-agent-sdk",
+    "version": "0.1.68"
+  },
+  {
+    "name": "click",
+    "version": "8.3.3"
+  },
+  {
+    "name": "colorama",
+    "version": "0.4.6"
+  },
+  {
+    "name": "cryptography",
+    "version": "47.0.0"
+  },
+  {
+    "name": "datacurve-pier",
+    "version": "0.3.1"
+  },
+  {
+    "name": "datasets",
+    "version": "4.8.4"
+  },
+  {
+    "name": "daytona",
+    "version": "0.176.0"
+  },
+  {
+    "name": "daytona-api-client",
+    "version": "0.176.0"
+  },
+  {
+    "name": "daytona-api-client-async",
+    "version": "0.176.0"
+  },
+  {
+    "name": "daytona-toolbox-api-client",
+    "version": "0.176.0"
+  },
+  {
+    "name": "daytona-toolbox-api-client-async",
+    "version": "0.176.0"
+  },
+  {
+    "name": "deprecated",
+    "version": "1.3.1"
+  },
+  {
+    "name": "deprecation",
+    "version": "2.1.0"
+  },
+  {
+    "name": "dill",
+    "version": "0.4.1"
+  },
+  {
+    "name": "dirhash",
+    "version": "0.5.0"
+  },
+  {
+    "name": "distro",
+    "version": "1.9.0"
+  },
+  {
+    "name": "docstring-parser",
+    "version": "0.18.0"
+  },
+  {
+    "name": "fastapi",
+    "version": "0.136.1"
+  },
+  {
+    "name": "fastuuid",
+    "version": "0.14.0"
+  },
+  {
+    "name": "filelock",
+    "version": "3.29.0"
+  },
+  {
+    "name": "frozenlist",
+    "version": "1.8.0"
+  },
+  {
+    "name": "fsspec",
+    "version": "2026.2.0"
+  },
+  {
+    "name": "googleapis-common-protos",
+    "version": "1.75.0"
+  },
+  {
+    "name": "grpclib",
+    "version": "0.4.9"
+  },
+  {
+    "name": "h11",
+    "version": "0.16.0"
+  },
+  {
+    "name": "h2",
+    "version": "4.3.0"
+  },
+  {
+    "name": "harbor",
+    "version": "0.5.0"
+  },
+  {
+    "name": "hf-xet",
+    "version": "1.4.3"
+  },
+  {
+    "name": "hpack",
+    "version": "4.1.0"
+  },
+  {
+    "name": "httpcore",
+    "version": "1.0.9"
+  },
+  {
+    "name": "httpx",
+    "version": "0.28.1"
+  },
+  {
+    "name": "httpx-sse",
+    "version": "0.4.3"
+  },
+  {
+    "name": "httpx-ws",
+    "version": "0.9.0"
+  },
+  {
+    "name": "huggingface-hub",
+    "version": "1.12.0"
+  },
+  {
+    "name": "hyperframe",
+    "version": "6.1.0"
+  },
+  {
+    "name": "idna",
+    "version": "3.13"
+  },
+  {
+    "name": "importlib-metadata",
+    "version": "9.0.0"
+  },
+  {
+    "name": "jinja2",
+    "version": "3.1.6"
+  },
+  {
+    "name": "jiter",
+    "version": "0.14.0"
+  },
+  {
+    "name": "jmespath",
+    "version": "1.1.0"
+  },
+  {
+    "name": "jsonschema",
+    "version": "4.26.0"
+  },
+  {
+    "name": "jsonschema-specifications",
+    "version": "2025.9.1"
+  },
+  {
+    "name": "litellm",
+    "version": "1.83.0"
+  },
+  {
+    "name": "loguru",
+    "version": "0.7.3"
+  },
+  {
+    "name": "markdown-it-py",
+    "version": "4.0.0"
+  },
+  {
+    "name": "markupsafe",
+    "version": "3.0.3"
+  },
+  {
+    "name": "mcp",
+    "version": "1.27.0"
+  },
+  {
+    "name": "mdurl",
+    "version": "0.1.2"
+  },
+  {
+    "name": "mmh3",
+    "version": "5.2.1"
+  },
+  {
+    "name": "modal",
+    "version": "1.5.4"
+  },
+  {
+    "name": "multidict",
+    "version": "6.7.1"
+  },
+  {
+    "name": "multiprocess",
+    "version": "0.70.19"
+  },
+  {
+    "name": "numpy",
+    "version": "2.4.4"
+  },
+  {
+    "name": "obstore",
+    "version": "0.8.2"
+  },
+  {
+    "name": "openai",
+    "version": "2.32.0"
+  },
+  {
+    "name": "opentelemetry-api",
+    "version": "1.42.0"
+  },
+  {
+    "name": "opentelemetry-exporter-otlp-proto-common",
+    "version": "1.42.0"
+  },
+  {
+    "name": "opentelemetry-exporter-otlp-proto-http",
+    "version": "1.42.0"
+  },
+  {
+    "name": "opentelemetry-instrumentation",
+    "version": "0.63b0"
+  },
+  {
+    "name": "opentelemetry-instrumentation-aiohttp-client",
+    "version": "0.63b0"
+  },
+  {
+    "name": "opentelemetry-proto",
+    "version": "1.42.0"
+  },
+  {
+    "name": "opentelemetry-sdk",
+    "version": "1.42.0"
+  },
+  {
+    "name": "opentelemetry-semantic-conventions",
+    "version": "0.63b0"
+  },
+  {
+    "name": "opentelemetry-util-http",
+    "version": "0.63b0"
+  },
+  {
+    "name": "packaging",
+    "version": "26.2"
+  },
+  {
+    "name": "pandas",
+    "version": "3.0.2"
+  },
+  {
+    "name": "pathspec",
+    "version": "1.1.1"
+  },
+  {
+    "name": "postgrest",
+    "version": "2.29.0"
+  },
+  {
+    "name": "propcache",
+    "version": "0.4.1"
+  },
+  {
+    "name": "protobuf",
+    "version": "6.33.6"
+  },
+  {
+    "name": "pyarrow",
+    "version": "24.0.0"
+  },
+  {
+    "name": "pycparser",
+    "version": "3.0"
+  },
+  {
+    "name": "pydantic",
+    "version": "2.13.3"
+  },
+  {
+    "name": "pydantic-core",
+    "version": "2.46.3"
+  },
+  {
+    "name": "pydantic-settings",
+    "version": "2.14.0"
+  },
+  {
+    "name": "pygments",
+    "version": "2.20.0"
+  },
+  {
+    "name": "pyiceberg",
+    "version": "0.11.1"
+  },
+  {
+    "name": "pyjwt",
+    "version": "2.12.1"
+  },
+  {
+    "name": "pyparsing",
+    "version": "3.3.2"
+  },
+  {
+    "name": "pyroaring",
+    "version": "1.1.0"
+  },
+  {
+    "name": "python-dateutil",
+    "version": "2.9.0.post0"
+  },
+  {
+    "name": "python-dotenv",
+    "version": "1.2.2"
+  },
+  {
+    "name": "python-multipart",
+    "version": "0.0.26"
+  },
+  {
+    "name": "pywin32",
+    "version": "311"
+  },
+  {
+    "name": "pyyaml",
+    "version": "6.0.3"
+  },
+  {
+    "name": "realtime",
+    "version": "2.29.0"
+  },
+  {
+    "name": "referencing",
+    "version": "0.37.0"
+  },
+  {
+    "name": "regex",
+    "version": "2026.4.4"
+  },
+  {
+    "name": "requests",
+    "version": "2.33.1"
+  },
+  {
+    "name": "rich",
+    "version": "14.3.4"
+  },
+  {
+    "name": "rpds-py",
+    "version": "0.30.0"
+  },
+  {
+    "name": "ruff",
+    "version": "0.15.12"
+  },
+  {
+    "name": "scantree",
+    "version": "0.0.4"
+  },
+  {
+    "name": "shellingham",
+    "version": "1.5.4"
+  },
+  {
+    "name": "shortuuid",
+    "version": "1.0.13"
+  },
+  {
+    "name": "six",
+    "version": "1.17.0"
+  },
+  {
+    "name": "sniffio",
+    "version": "1.3.1"
+  },
+  {
+    "name": "sse-starlette",
+    "version": "3.4.1"
+  },
+  {
+    "name": "starlette",
+    "version": "1.0.0"
+  },
+  {
+    "name": "storage3",
+    "version": "2.29.0"
+  },
+  {
+    "name": "strenum",
+    "version": "0.4.15"
+  },
+  {
+    "name": "strictyaml",
+    "version": "1.7.3"
+  },
+  {
+    "name": "supabase",
+    "version": "2.29.0"
+  },
+  {
+    "name": "supabase-auth",
+    "version": "2.29.0"
+  },
+  {
+    "name": "supabase-functions",
+    "version": "2.29.0"
+  },
+  {
+    "name": "synchronicity",
+    "version": "0.12.5"
+  },
+  {
+    "name": "tenacity",
+    "version": "9.1.4"
+  },
+  {
+    "name": "tiktoken",
+    "version": "0.12.0"
+  },
+  {
+    "name": "tokenizers",
+    "version": "0.22.2"
+  },
+  {
+    "name": "toml",
+    "version": "0.10.2"
+  },
+  {
+    "name": "tqdm",
+    "version": "4.67.3"
+  },
+  {
+    "name": "typer",
+    "version": "0.25.0"
+  },
+  {
+    "name": "types-certifi",
+    "version": "2021.10.8.3"
+  },
+  {
+    "name": "types-toml",
+    "version": "0.10.8.20260408"
+  },
+  {
+    "name": "typing-extensions",
+    "version": "4.15.0"
+  },
+  {
+    "name": "typing-inspection",
+    "version": "0.4.2"
+  },
+  {
+    "name": "tzdata",
+    "version": "2026.2"
+  },
+  {
+    "name": "urllib3",
+    "version": "2.6.3"
+  },
+  {
+    "name": "uvicorn",
+    "version": "0.46.0"
+  },
+  {
+    "name": "watchfiles",
+    "version": "1.1.1"
+  },
+  {
+    "name": "websockets",
+    "version": "15.0.1"
+  },
+  {
+    "name": "win32-setctime",
+    "version": "1.2.0"
+  },
+  {
+    "name": "wrapt",
+    "version": "2.1.2"
+  },
+  {
+    "name": "wsproto",
+    "version": "1.3.2"
+  },
+  {
+    "name": "xxhash",
+    "version": "3.7.0"
+  },
+  {
+    "name": "yarl",
+    "version": "1.23.0"
+  },
+  {
+    "name": "zipp",
+    "version": "3.23.1"
+  },
+  {
+    "name": "zstandard",
+    "version": "0.25.0"
+  }
+]

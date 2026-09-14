@@ -1,0 +1,137 @@
+{
+  "status": "recomputed_from_recorded_usage",
+  "pricing": "Standard credit equivalent; not a billing ledger",
+  "source_usage_sha256": "37ec52714f166f9f0115e8de79df97961da64c2bf6d059ffb068b0df179dda2c",
+  "rate_card_sha256": "dd6da873906655bbf1c5e139ff1bc13e304d5f37240e47107fff4c07b95338bd",
+  "all_18_attempts_per_arm": {
+    "none": {
+      "attempts": 18,
+      "raw_full_passes": 2,
+      "helpers": 0,
+      "credits": {
+        "total": 580.080749,
+        "root": 580.080749,
+        "helper": 0.0,
+        "uncached_input": 141.865025,
+        "cached_input": 291.933184,
+        "output": 146.28254
+      },
+      "credits_by_model": {
+        "gpt-5.6-luna": 40.082159,
+        "gpt-5.6-sol": 204.14184,
+        "gpt-5.6-terra": 69.5285,
+        "gpt-6-astra": 266.32825
+      },
+      "helper_credit_share_percent": 0.0,
+      "credits_per_raw_full_pass": 290.0403745
+    },
+    "previous": {
+      "attempts": 18,
+      "raw_full_passes": 6,
+      "helpers": 19,
+      "credits": {
+        "total": 724.219695,
+        "root": 675.884733,
+        "helper": 48.334962,
+        "uncached_input": 154.850615,
+        "cached_input": 411.89568,
+        "output": 157.4734
+      },
+      "credits_by_model": {
+        "gpt-5.6-luna": 95.785105,
+        "gpt-5.6-sol": 232.63276,
+        "gpt-5.6-terra": 108.03523,
+        "gpt-6-astra": 287.7666
+      },
+      "helper_credit_share_percent": 6.674074501660715,
+      "credits_per_raw_full_pass": 120.7032825
+    },
+    "revised": {
+      "attempts": 18,
+      "raw_full_passes": 4,
+      "helpers": 10,
+      "credits": {
+        "total": 884.192096,
+        "root": 847.446108,
+        "helper": 36.745988,
+        "uncached_input": 146.62215,
+        "cached_input": 564.397056,
+        "output": 173.17289
+      },
+      "credits_by_model": {
+        "gpt-5.6-luna": 82.623416,
+        "gpt-5.6-sol": 277.2176,
+        "gpt-5.6-terra": 91.91178,
+        "gpt-6-astra": 432.4393
+      },
+      "helper_credit_share_percent": 4.155882886336048,
+      "credits_per_raw_full_pass": 221.048024
+    }
+  },
+  "matched_17_excluding_baseline_grader_interference": {
+    "none": {
+      "attempts": 17,
+      "raw_full_passes": 2,
+      "helpers": 0,
+      "credits": {
+        "total": 517.960749,
+        "root": 517.960749,
+        "helper": 0.0,
+        "uncached_input": 123.190775,
+        "cached_input": 277.661184,
+        "output": 117.10879
+      },
+      "credits_by_model": {
+        "gpt-5.6-luna": 40.082159,
+        "gpt-5.6-sol": 204.14184,
+        "gpt-5.6-terra": 69.5285,
+        "gpt-6-astra": 204.20825
+      },
+      "helper_credit_share_percent": 0.0,
+      "credits_per_raw_full_pass": 258.9803745
+    },
+    "previous": {
+      "attempts": 17,
+      "raw_full_passes": 5,
+      "helpers": 18,
+      "credits": {
+        "total": 663.38305,
+        "root": 615.799383,
+        "helper": 47.583667,
+        "uncached_input": 135.98633,
+        "cached_input": 392.59648,
+        "output": 134.80024
+      },
+      "credits_by_model": {
+        "gpt-5.6-luna": 95.03381,
+        "gpt-5.6-sol": 232.63276,
+        "gpt-5.6-terra": 108.03523,
+        "gpt-6-astra": 227.68125
+      },
+      "helper_credit_share_percent": 7.172879530159838,
+      "credits_per_raw_full_pass": 132.67661
+    },
+    "revised": {
+      "attempts": 17,
+      "raw_full_passes": 3,
+      "helpers": 9,
+      "credits": {
+        "total": 777.341136,
+        "root": 741.000408,
+        "helper": 36.340728,
+        "uncached_input": 129.28294,
+        "cached_input": 503.380736,
+        "output": 144.67746
+      },
+      "credits_by_model": {
+        "gpt-5.6-luna": 82.218156,
+        "gpt-5.6-sol": 277.2176,
+        "gpt-5.6-terra": 91.91178,
+        "gpt-6-astra": 325.9936
+      },
+      "helper_credit_share_percent": 4.675003845415946,
+      "credits_per_raw_full_pass": 259.113712
+    }
+  },
+  "total_scored_credit_equivalent": 2188.49254
+}

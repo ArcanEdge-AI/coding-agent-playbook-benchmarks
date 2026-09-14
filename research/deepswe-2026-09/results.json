@@ -1,0 +1,2203 @@
+{
+  "state": "completed",
+  "completed_triplets": 18,
+  "pairs": [
+    {
+      "slot": "001",
+      "setting": "luna-high",
+      "task": "obsidian-linter-link-format-conversion",
+      "grader_interference_arms": [],
+      "arms": {
+        "none": {
+          "attempt": "valid-001",
+          "status": "completed",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 60,
+            "f2p_passed": 59,
+            "p2p_total": 1131,
+            "p2p_passed": 1131,
+            "f2p": 0.9833333333333333,
+            "p2p": 1.0,
+            "partial": 0.9991603694374476
+          },
+          "native_seconds": 605.625,
+          "usage": {
+            "input_tokens": 2612390,
+            "cached_input_tokens": 2486272,
+            "output_tokens": 28351
+          },
+          "helpers": 0,
+          "patch_bytes": 15909,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-calibration-v1/runs-v2/valid-001/obsidian-linter-link-format-conv__i3742Rs"
+        },
+        "current": {
+          "attempt": "full-001",
+          "status": "completed",
+          "reward": {
+            "reward": 1,
+            "f2p_total": 60,
+            "f2p_passed": 60,
+            "p2p_total": 1131,
+            "p2p_passed": 1131,
+            "f2p": 1.0,
+            "p2p": 1.0,
+            "partial": 1.0
+          },
+          "native_seconds": 714.265000000014,
+          "usage": {
+            "input_tokens": 5342268,
+            "cached_input_tokens": 5040896,
+            "output_tokens": 56263
+          },
+          "helpers": 1,
+          "patch_bytes": 13795,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-current-global-v1/runs-full/full-001/obsidian-linter-link-format-conv__ztyHfE7"
+        },
+        "updated": {
+          "attempt": "updated-001",
+          "status": "completed",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 60,
+            "f2p_passed": 59,
+            "p2p_total": 1131,
+            "p2p_passed": 1131,
+            "f2p": 0.9833333333333333,
+            "p2p": 1.0,
+            "partial": 0.9991603694374476
+          },
+          "native_seconds": 602.0310000000172,
+          "usage": {
+            "input_tokens": 4449292,
+            "cached_input_tokens": 4303872,
+            "output_tokens": 25851
+          },
+          "helpers": 0,
+          "patch_bytes": 15688,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-updated-global-v1/runs-full/updated-001/obsidian-linter-link-format-conv__JSCXYnK"
+        }
+      },
+      "excluded_from_matched_effect": false
+    },
+    {
+      "slot": "002",
+      "setting": "luna-high",
+      "task": "kcp-go-multiplexed-kcp-streams",
+      "grader_interference_arms": [],
+      "arms": {
+        "none": {
+          "attempt": "valid-002",
+          "status": "completed",
+          "reward": {
+            "reward": 1,
+            "f2p_total": 30,
+            "f2p_passed": 30,
+            "p2p_total": 12,
+            "p2p_passed": 12,
+            "f2p": 1.0,
+            "p2p": 1.0,
+            "partial": 1.0
+          },
+          "native_seconds": 974.984999999986,
+          "usage": {
+            "input_tokens": 2666877,
+            "cached_input_tokens": 2547456,
+            "output_tokens": 32560
+          },
+          "helpers": 0,
+          "patch_bytes": 23309,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-calibration-v1/runs-v2/valid-002/kcp-go-multiplexed-kcp-streams__nJTTjCL"
+        },
+        "current": {
+          "attempt": "full-002",
+          "status": "completed",
+          "reward": {
+            "reward": 1,
+            "f2p_total": 30,
+            "f2p_passed": 30,
+            "p2p_total": 12,
+            "p2p_passed": 12,
+            "f2p": 1.0,
+            "p2p": 1.0,
+            "partial": 1.0
+          },
+          "native_seconds": 843.079000000027,
+          "usage": {
+            "input_tokens": 3639146,
+            "cached_input_tokens": 3375360,
+            "output_tokens": 35095
+          },
+          "helpers": 1,
+          "patch_bytes": 26270,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-current-global-v1/runs-full/full-002/kcp-go-multiplexed-kcp-streams__dyitXro"
+        },
+        "updated": {
+          "attempt": "updated-002",
+          "status": "completed",
+          "reward": {
+            "reward": 1,
+            "f2p_total": 30,
+            "f2p_passed": 30,
+            "p2p_total": 12,
+            "p2p_passed": 12,
+            "f2p": 1.0,
+            "p2p": 1.0,
+            "partial": 1.0
+          },
+          "native_seconds": 1008.4060000000172,
+          "usage": {
+            "input_tokens": 4877504,
+            "cached_input_tokens": 4724224,
+            "output_tokens": 32402
+          },
+          "helpers": 0,
+          "patch_bytes": 24423,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-updated-global-v1/runs-full/updated-002/kcp-go-multiplexed-kcp-streams__LSwCLNW"
+        }
+      },
+      "excluded_from_matched_effect": false
+    },
+    {
+      "slot": "003",
+      "setting": "sol-high",
+      "task": "python-statemachine-state-data-scoping",
+      "grader_interference_arms": [],
+      "arms": {
+        "none": {
+          "attempt": "valid-003",
+          "status": "timeout",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 72,
+            "f2p_passed": 0,
+            "p2p_total": 1286,
+            "p2p_passed": 1286,
+            "f2p": 0.0,
+            "p2p": 1.0,
+            "partial": 0.946980854197349
+          },
+          "native_seconds": 1194.3120000000345,
+          "usage": {
+            "input_tokens": 9673818,
+            "cached_input_tokens": 9477120,
+            "output_tokens": 36583
+          },
+          "helpers": 0,
+          "patch_bytes": 0,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-calibration-v1/runs-v2/valid-003/python-statemachine-state-data-s__2J4kqVb"
+        },
+        "current": {
+          "attempt": "full-003",
+          "status": "timeout",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 72,
+            "f2p_passed": 0,
+            "p2p_total": 1286,
+            "p2p_passed": 1286,
+            "f2p": 0.0,
+            "p2p": 1.0,
+            "partial": 0.946980854197349
+          },
+          "native_seconds": 1194.0779999999795,
+          "usage": {
+            "input_tokens": 11900797,
+            "cached_input_tokens": 11557248,
+            "output_tokens": 49225
+          },
+          "helpers": 1,
+          "patch_bytes": 0,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-current-global-v1/runs-full/full-003/python-statemachine-state-data-s__C5EgB8x"
+        },
+        "updated": {
+          "attempt": "updated-003",
+          "status": "timeout",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 72,
+            "f2p_passed": 0,
+            "p2p_total": 1286,
+            "p2p_passed": 1286,
+            "f2p": 0.0,
+            "p2p": 1.0,
+            "partial": 0.946980854197349
+          },
+          "native_seconds": 1193.7810000000172,
+          "usage": {
+            "input_tokens": 32635152,
+            "cached_input_tokens": 31729408,
+            "output_tokens": 104393
+          },
+          "helpers": 3,
+          "patch_bytes": 0,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-updated-global-v1/runs-full/updated-003/python-statemachine-state-data-s__BzsaFTq"
+        }
+      },
+      "excluded_from_matched_effect": false
+    },
+    {
+      "slot": "004",
+      "setting": "terra-high",
+      "task": "kcp-go-multiplexed-kcp-streams",
+      "grader_interference_arms": [],
+      "arms": {
+        "none": {
+          "attempt": "valid-004",
+          "status": "completed",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 30,
+            "f2p_passed": 29,
+            "p2p_total": 12,
+            "p2p_passed": 12,
+            "f2p": 0.9666666666666667,
+            "p2p": 1.0,
+            "partial": 0.9761904761904762
+          },
+          "native_seconds": 605.0939999999828,
+          "usage": {
+            "input_tokens": 907574,
+            "cached_input_tokens": 845312,
+            "output_tokens": 25053
+          },
+          "helpers": 0,
+          "patch_bytes": 28100,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-calibration-v1/runs-v2/valid-004/kcp-go-multiplexed-kcp-streams__HFSzkDx"
+        },
+        "current": {
+          "attempt": "full-004",
+          "status": "completed",
+          "reward": {
+            "reward": 1,
+            "f2p_total": 30,
+            "f2p_passed": 30,
+            "p2p_total": 12,
+            "p2p_passed": 12,
+            "f2p": 1.0,
+            "p2p": 1.0,
+            "partial": 1.0
+          },
+          "native_seconds": 589.9369999999763,
+          "usage": {
+            "input_tokens": 1876289,
+            "cached_input_tokens": 1744384,
+            "output_tokens": 26537
+          },
+          "helpers": 1,
+          "patch_bytes": 27022,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-current-global-v1/runs-full/full-004/kcp-go-multiplexed-kcp-streams__vjptz6v"
+        },
+        "updated": {
+          "attempt": "updated-004",
+          "status": "completed",
+          "reward": {
+            "reward": 1,
+            "f2p_total": 30,
+            "f2p_passed": 30,
+            "p2p_total": 12,
+            "p2p_passed": 12,
+            "f2p": 1.0,
+            "p2p": 1.0,
+            "partial": 1.0
+          },
+          "native_seconds": 711.984999999986,
+          "usage": {
+            "input_tokens": 1921858,
+            "cached_input_tokens": 1830656,
+            "output_tokens": 27561
+          },
+          "helpers": 0,
+          "patch_bytes": 26117,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-updated-global-v1/runs-full/updated-004/kcp-go-multiplexed-kcp-streams__DXHzB34"
+        }
+      },
+      "excluded_from_matched_effect": false
+    },
+    {
+      "slot": "005",
+      "setting": "luna-max",
+      "task": "kcp-go-multiplexed-kcp-streams",
+      "grader_interference_arms": [],
+      "arms": {
+        "none": {
+          "attempt": "valid-005",
+          "status": "timeout",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 30,
+            "f2p_passed": 0,
+            "p2p_total": 12,
+            "p2p_passed": 12,
+            "f2p": 0.0,
+            "p2p": 1.0,
+            "partial": 0.2857142857142857
+          },
+          "native_seconds": 1194.25,
+          "usage": {
+            "input_tokens": 4382842,
+            "cached_input_tokens": 4229632,
+            "output_tokens": 56708
+          },
+          "helpers": 0,
+          "patch_bytes": 0,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-calibration-v1/runs-v2/valid-005/kcp-go-multiplexed-kcp-streams__KcSQRkW"
+        },
+        "current": {
+          "attempt": "full-005",
+          "status": "timeout",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 30,
+            "f2p_passed": 0,
+            "p2p_total": 12,
+            "p2p_passed": 12,
+            "f2p": 0.0,
+            "p2p": 1.0,
+            "partial": 0.2857142857142857
+          },
+          "native_seconds": 1193.9369999999763,
+          "usage": {
+            "input_tokens": 4633218,
+            "cached_input_tokens": 4440832,
+            "output_tokens": 55890
+          },
+          "helpers": 1,
+          "patch_bytes": 5573,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-current-global-v1/runs-full/full-005/kcp-go-multiplexed-kcp-streams__QNLLFFL"
+        },
+        "updated": {
+          "attempt": "updated-005",
+          "status": "timeout",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 30,
+            "f2p_passed": 0,
+            "p2p_total": 12,
+            "p2p_passed": 12,
+            "f2p": 0.0,
+            "p2p": 1.0,
+            "partial": 0.2857142857142857
+          },
+          "native_seconds": 1193.5310000000172,
+          "usage": {
+            "input_tokens": 5967137,
+            "cached_input_tokens": 5812736,
+            "output_tokens": 51173
+          },
+          "helpers": 0,
+          "patch_bytes": 0,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-updated-global-v1/runs-full/updated-005/kcp-go-multiplexed-kcp-streams__a2yBbmd"
+        }
+      },
+      "excluded_from_matched_effect": false
+    },
+    {
+      "slot": "006",
+      "setting": "sol-high",
+      "task": "obsidian-linter-link-format-conversion",
+      "grader_interference_arms": [],
+      "arms": {
+        "none": {
+          "attempt": "valid-006",
+          "status": "completed",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 60,
+            "f2p_passed": 58,
+            "p2p_total": 1131,
+            "p2p_passed": 1131,
+            "f2p": 0.9666666666666667,
+            "p2p": 1.0,
+            "partial": 0.998320738874895
+          },
+          "native_seconds": 624.5470000000205,
+          "usage": {
+            "input_tokens": 1881033,
+            "cached_input_tokens": 1792256,
+            "output_tokens": 20885
+          },
+          "helpers": 0,
+          "patch_bytes": 17519,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-calibration-v1/runs-v2/valid-006/obsidian-linter-link-format-conv__oojRA9U"
+        },
+        "current": {
+          "attempt": "full-006",
+          "status": "completed",
+          "reward": {
+            "reward": 1,
+            "f2p_total": 60,
+            "f2p_passed": 60,
+            "p2p_total": 1131,
+            "p2p_passed": 1131,
+            "f2p": 1.0,
+            "p2p": 1.0,
+            "partial": 1.0
+          },
+          "native_seconds": 1131.1879999999655,
+          "usage": {
+            "input_tokens": 8503948,
+            "cached_input_tokens": 8195200,
+            "output_tokens": 52435
+          },
+          "helpers": 1,
+          "patch_bytes": 17806,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-current-global-v1/runs-full/full-006/obsidian-linter-link-format-conv__b3mhvXw"
+        },
+        "updated": {
+          "attempt": "updated-006",
+          "status": "completed",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 60,
+            "f2p_passed": 58,
+            "p2p_total": 1131,
+            "p2p_passed": 1131,
+            "f2p": 0.9666666666666667,
+            "p2p": 1.0,
+            "partial": 0.998320738874895
+          },
+          "native_seconds": 1037.75,
+          "usage": {
+            "input_tokens": 11590129,
+            "cached_input_tokens": 11207296,
+            "output_tokens": 57100
+          },
+          "helpers": 2,
+          "patch_bytes": 23929,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-updated-global-v1/runs-full/updated-006/obsidian-linter-link-format-conv__zaitT4u"
+        }
+      },
+      "excluded_from_matched_effect": false
+    },
+    {
+      "slot": "007",
+      "setting": "luna-high",
+      "task": "python-statemachine-state-data-scoping",
+      "grader_interference_arms": [],
+      "arms": {
+        "none": {
+          "attempt": "valid-007",
+          "status": "completed",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 72,
+            "f2p_passed": 67,
+            "p2p_total": 1286,
+            "p2p_passed": 1286,
+            "f2p": 0.9305555555555556,
+            "p2p": 1.0,
+            "partial": 0.9963181148748159
+          },
+          "native_seconds": 987.75,
+          "usage": {
+            "input_tokens": 12399387,
+            "cached_input_tokens": 12177664,
+            "output_tokens": 43203
+          },
+          "helpers": 0,
+          "patch_bytes": 34100,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-calibration-v1/runs-v2/valid-007/python-statemachine-state-data-s__HCzHwd4"
+        },
+        "current": {
+          "attempt": "full-007",
+          "status": "timeout",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 72,
+            "f2p_passed": 0,
+            "p2p_total": 1286,
+            "p2p_passed": 1286,
+            "f2p": 0.0,
+            "p2p": 1.0,
+            "partial": 0.946980854197349
+          },
+          "native_seconds": 1193.7189999999828,
+          "usage": {
+            "input_tokens": 21297692,
+            "cached_input_tokens": 20749824,
+            "output_tokens": 74110
+          },
+          "helpers": 1,
+          "patch_bytes": 0,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-current-global-v1/runs-full/full-007/python-statemachine-state-data-s__GE5RwVd"
+        },
+        "updated": {
+          "attempt": "updated-007",
+          "status": "timeout",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 72,
+            "f2p_passed": 65,
+            "p2p_total": 1286,
+            "p2p_passed": 1286,
+            "f2p": 0.9027777777777778,
+            "p2p": 1.0,
+            "partial": 0.9948453608247423
+          },
+          "native_seconds": 1193.920999999973,
+          "usage": {
+            "input_tokens": 15633701,
+            "cached_input_tokens": 15393024,
+            "output_tokens": 42169
+          },
+          "helpers": 0,
+          "patch_bytes": 32659,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-updated-global-v1/runs-full/updated-007/python-statemachine-state-data-s__5RQ9CuX"
+        }
+      },
+      "excluded_from_matched_effect": false
+    },
+    {
+      "slot": "008",
+      "setting": "luna-max",
+      "task": "python-statemachine-state-data-scoping",
+      "grader_interference_arms": [],
+      "arms": {
+        "none": {
+          "attempt": "valid-008",
+          "status": "timeout",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 72,
+            "f2p_passed": 0,
+            "p2p_total": 1286,
+            "p2p_passed": 1286,
+            "f2p": 0.0,
+            "p2p": 1.0,
+            "partial": 0.946980854197349
+          },
+          "native_seconds": 1194.25,
+          "usage": {
+            "input_tokens": 14679516,
+            "cached_input_tokens": 14373120,
+            "output_tokens": 58030
+          },
+          "helpers": 0,
+          "patch_bytes": 0,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-calibration-v1/runs-v2/valid-008/python-statemachine-state-data-s__y9B5UEd"
+        },
+        "current": {
+          "attempt": "full-008",
+          "status": "timeout",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 72,
+            "f2p_passed": 0,
+            "p2p_total": 1286,
+            "p2p_passed": 1286,
+            "f2p": 0.0,
+            "p2p": 1.0,
+            "partial": 0.946980854197349
+          },
+          "native_seconds": 1193.9529999999795,
+          "usage": {
+            "input_tokens": 21460852,
+            "cached_input_tokens": 20872960,
+            "output_tokens": 85012
+          },
+          "helpers": 1,
+          "patch_bytes": 0,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-current-global-v1/runs-full/full-008/python-statemachine-state-data-s__dynE8Lq"
+        },
+        "updated": {
+          "attempt": "updated-008",
+          "status": "timeout",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 72,
+            "f2p_passed": 0,
+            "p2p_total": 1286,
+            "p2p_passed": 1286,
+            "f2p": 0.0,
+            "p2p": 1.0,
+            "partial": 0.946980854197349
+          },
+          "native_seconds": 1193.969000000041,
+          "usage": {
+            "input_tokens": 21463103,
+            "cached_input_tokens": 20898816,
+            "output_tokens": 87032
+          },
+          "helpers": 1,
+          "patch_bytes": 0,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-updated-global-v1/runs-full/updated-008/python-statemachine-state-data-s__piVNLBj"
+        }
+      },
+      "excluded_from_matched_effect": false
+    },
+    {
+      "slot": "009",
+      "setting": "astra-high",
+      "task": "python-statemachine-state-data-scoping",
+      "grader_interference_arms": [],
+      "arms": {
+        "none": {
+          "attempt": "valid-009",
+          "status": "completed",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 72,
+            "f2p_passed": 69,
+            "p2p_total": 1286,
+            "p2p_passed": 1286,
+            "f2p": 0.9583333333333334,
+            "p2p": 1.0,
+            "partial": 0.9977908689248896
+          },
+          "native_seconds": 989.4060000000172,
+          "usage": {
+            "input_tokens": 2884306,
+            "cached_input_tokens": 2700800,
+            "output_tokens": 22748
+          },
+          "helpers": 0,
+          "patch_bytes": 44841,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-calibration-v1/runs-v2/valid-009/python-statemachine-state-data-s__eaoQ6iL"
+        },
+        "current": {
+          "attempt": "full-009",
+          "status": "completed",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 72,
+            "f2p_passed": 69,
+            "p2p_total": 1286,
+            "p2p_passed": 1286,
+            "f2p": 0.9583333333333334,
+            "p2p": 1.0,
+            "partial": 0.9977908689248896
+          },
+          "native_seconds": 757.469000000041,
+          "usage": {
+            "input_tokens": 8996313,
+            "cached_input_tokens": 8695296,
+            "output_tokens": 44658
+          },
+          "helpers": 1,
+          "patch_bytes": 40458,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-current-global-v1/runs-full/full-009/python-statemachine-state-data-s__mCHbS6S"
+        },
+        "updated": {
+          "attempt": "updated-009",
+          "status": "timeout",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 72,
+            "f2p_passed": 0,
+            "p2p_total": 1286,
+            "p2p_passed": 1286,
+            "f2p": 0.0,
+            "p2p": 1.0,
+            "partial": 0.946980854197349
+          },
+          "native_seconds": 1193.7179999999935,
+          "usage": {
+            "input_tokens": 17835682,
+            "cached_input_tokens": 17457280,
+            "output_tokens": 69717
+          },
+          "helpers": 1,
+          "patch_bytes": 0,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-updated-global-v1/runs-full/updated-009/python-statemachine-state-data-s__zkxwGvg"
+        }
+      },
+      "excluded_from_matched_effect": false
+    },
+    {
+      "slot": "010",
+      "setting": "astra-high",
+      "task": "kcp-go-multiplexed-kcp-streams",
+      "grader_interference_arms": [
+        "none"
+      ],
+      "arms": {
+        "none": {
+          "attempt": "valid-010",
+          "status": "completed",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 30,
+            "f2p_passed": 0,
+            "p2p_total": 12,
+            "p2p_passed": 0,
+            "f2p": 0.0,
+            "p2p": 0.0,
+            "partial": 0.0
+          },
+          "native_seconds": 829.0629999999655,
+          "usage": {
+            "input_tokens": 645577,
+            "cached_input_tokens": 570880,
+            "output_tokens": 23339
+          },
+          "helpers": 0,
+          "patch_bytes": 46810,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-calibration-v1/runs-v2/valid-010/kcp-go-multiplexed-kcp-streams__K5zXm3K"
+        },
+        "current": {
+          "attempt": "full-010",
+          "status": "completed",
+          "reward": {
+            "reward": 1,
+            "f2p_total": 30,
+            "f2p_passed": 30,
+            "p2p_total": 12,
+            "p2p_passed": 12,
+            "f2p": 1.0,
+            "p2p": 1.0,
+            "partial": 1.0
+          },
+          "native_seconds": 621.25,
+          "usage": {
+            "input_tokens": 1578463,
+            "cached_input_tokens": 1449344,
+            "output_tokens": 22430
+          },
+          "helpers": 1,
+          "patch_bytes": 40052,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-current-global-v1/runs-full/full-010/kcp-go-multiplexed-kcp-streams__HVDvJrC"
+        },
+        "updated": {
+          "attempt": "updated-010",
+          "status": "timeout",
+          "reward": {
+            "reward": 1,
+            "f2p_total": 30,
+            "f2p_passed": 30,
+            "p2p_total": 12,
+            "p2p_passed": 12,
+            "f2p": 1.0,
+            "p2p": 1.0,
+            "partial": 1.0
+          },
+          "native_seconds": 1193.7970000000205,
+          "usage": {
+            "input_tokens": 2775866,
+            "cached_input_tokens": 2670208,
+            "output_tokens": 26145
+          },
+          "helpers": 1,
+          "patch_bytes": 44425,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-updated-global-v1/runs-full/updated-010/kcp-go-multiplexed-kcp-streams__iJt4kkE"
+        }
+      },
+      "excluded_from_matched_effect": true
+    },
+    {
+      "slot": "011",
+      "setting": "luna-medium",
+      "task": "kcp-go-multiplexed-kcp-streams",
+      "grader_interference_arms": [],
+      "arms": {
+        "none": {
+          "attempt": "valid-011",
+          "status": "completed",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 30,
+            "f2p_passed": 13,
+            "p2p_total": 12,
+            "p2p_passed": 12,
+            "f2p": 0.43333333333333335,
+            "p2p": 1.0,
+            "partial": 0.5952380952380952
+          },
+          "native_seconds": 491.2030000000377,
+          "usage": {
+            "input_tokens": 543166,
+            "cached_input_tokens": 475904,
+            "output_tokens": 10922
+          },
+          "helpers": 0,
+          "patch_bytes": 15354,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-calibration-v1/runs-v2/valid-011/kcp-go-multiplexed-kcp-streams__WBxU2tb"
+        },
+        "current": {
+          "attempt": "full-011",
+          "status": "completed",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 30,
+            "f2p_passed": 26,
+            "p2p_total": 12,
+            "p2p_passed": 12,
+            "f2p": 0.8666666666666667,
+            "p2p": 1.0,
+            "partial": 0.9047619047619048
+          },
+          "native_seconds": 739.875,
+          "usage": {
+            "input_tokens": 3867203,
+            "cached_input_tokens": 3640320,
+            "output_tokens": 37829
+          },
+          "helpers": 1,
+          "patch_bytes": 17347,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-current-global-v1/runs-full/full-011/kcp-go-multiplexed-kcp-streams__Nuj6wQd"
+        },
+        "updated": {
+          "attempt": "updated-011",
+          "status": "completed",
+          "reward": {
+            "reward": 1,
+            "f2p_total": 30,
+            "f2p_passed": 30,
+            "p2p_total": 12,
+            "p2p_passed": 12,
+            "f2p": 1.0,
+            "p2p": 1.0,
+            "partial": 1.0
+          },
+          "native_seconds": 477.2029999999795,
+          "usage": {
+            "input_tokens": 598054,
+            "cached_input_tokens": 549376,
+            "output_tokens": 11081
+          },
+          "helpers": 0,
+          "patch_bytes": 15576,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-updated-global-v1/runs-full/updated-011/kcp-go-multiplexed-kcp-streams__iQU8z4A"
+        }
+      },
+      "excluded_from_matched_effect": false
+    },
+    {
+      "slot": "012",
+      "setting": "luna-medium",
+      "task": "obsidian-linter-link-format-conversion",
+      "grader_interference_arms": [],
+      "arms": {
+        "none": {
+          "attempt": "valid-012",
+          "status": "completed",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 60,
+            "f2p_passed": 58,
+            "p2p_total": 1131,
+            "p2p_passed": 1131,
+            "f2p": 0.9666666666666667,
+            "p2p": 1.0,
+            "partial": 0.998320738874895
+          },
+          "native_seconds": 283.280999999959,
+          "usage": {
+            "input_tokens": 1766890,
+            "cached_input_tokens": 1675520,
+            "output_tokens": 11111
+          },
+          "helpers": 0,
+          "patch_bytes": 12031,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-calibration-v1/runs-v2/valid-012/obsidian-linter-link-format-conv__39FVMxf"
+        },
+        "current": {
+          "attempt": "full-012",
+          "status": "completed",
+          "reward": {
+            "reward": 1,
+            "f2p_total": 60,
+            "f2p_passed": 60,
+            "p2p_total": 1131,
+            "p2p_passed": 1131,
+            "f2p": 1.0,
+            "p2p": 1.0,
+            "partial": 1.0
+          },
+          "native_seconds": 326.96899999998277,
+          "usage": {
+            "input_tokens": 5490121,
+            "cached_input_tokens": 5211904,
+            "output_tokens": 21216
+          },
+          "helpers": 1,
+          "patch_bytes": 10038,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-current-global-v1/runs-full/full-012/obsidian-linter-link-format-conv__r66KrJe"
+        },
+        "updated": {
+          "attempt": "updated-012",
+          "status": "completed",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 60,
+            "f2p_passed": 58,
+            "p2p_total": 1131,
+            "p2p_passed": 1131,
+            "f2p": 0.9666666666666667,
+            "p2p": 1.0,
+            "partial": 0.998320738874895
+          },
+          "native_seconds": 287.2029999999795,
+          "usage": {
+            "input_tokens": 1147092,
+            "cached_input_tokens": 1069056,
+            "output_tokens": 10356
+          },
+          "helpers": 0,
+          "patch_bytes": 10257,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-updated-global-v1/runs-full/updated-012/obsidian-linter-link-format-conv__t6oSxHD"
+        }
+      },
+      "excluded_from_matched_effect": false
+    },
+    {
+      "slot": "013",
+      "setting": "astra-high",
+      "task": "obsidian-linter-link-format-conversion",
+      "grader_interference_arms": [],
+      "arms": {
+        "none": {
+          "attempt": "valid-013",
+          "status": "completed",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 60,
+            "f2p_passed": 59,
+            "p2p_total": 1131,
+            "p2p_passed": 1131,
+            "f2p": 0.9833333333333333,
+            "p2p": 1.0,
+            "partial": 0.9991603694374476
+          },
+          "native_seconds": 504.75,
+          "usage": {
+            "input_tokens": 1095970,
+            "cached_input_tokens": 1019520,
+            "output_tokens": 14221
+          },
+          "helpers": 0,
+          "patch_bytes": 22806,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-calibration-v1/runs-v2/valid-013/obsidian-linter-link-format-conv__Fq74o9a"
+        },
+        "current": {
+          "attempt": "full-013",
+          "status": "completed",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 60,
+            "f2p_passed": 59,
+            "p2p_total": 1131,
+            "p2p_passed": 1131,
+            "f2p": 0.9833333333333333,
+            "p2p": 1.0,
+            "partial": 0.9991603694374476
+          },
+          "native_seconds": 758.9060000000172,
+          "usage": {
+            "input_tokens": 5574610,
+            "cached_input_tokens": 5273088,
+            "output_tokens": 38410
+          },
+          "helpers": 1,
+          "patch_bytes": 25311,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-current-global-v1/runs-full/full-013/obsidian-linter-link-format-conv__MtAe3hM"
+        },
+        "updated": {
+          "attempt": "updated-013",
+          "status": "completed",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 60,
+            "f2p_passed": 59,
+            "p2p_total": 1131,
+            "p2p_passed": 1131,
+            "f2p": 0.9833333333333333,
+            "p2p": 1.0,
+            "partial": 0.9991603694374476
+          },
+          "native_seconds": 478.219000000041,
+          "usage": {
+            "input_tokens": 1353420,
+            "cached_input_tokens": 1277440,
+            "output_tokens": 13695
+          },
+          "helpers": 0,
+          "patch_bytes": 19329,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-updated-global-v1/runs-full/updated-013/obsidian-linter-link-format-conv__gSYQ7Dp"
+        }
+      },
+      "excluded_from_matched_effect": false
+    },
+    {
+      "slot": "014",
+      "setting": "terra-high",
+      "task": "python-statemachine-state-data-scoping",
+      "grader_interference_arms": [],
+      "arms": {
+        "none": {
+          "attempt": "valid-014",
+          "status": "completed",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 72,
+            "f2p_passed": 67,
+            "p2p_total": 1286,
+            "p2p_passed": 1262,
+            "f2p": 0.9305555555555556,
+            "p2p": 0.9813374805598756,
+            "partial": 0.9786450662739322
+          },
+          "native_seconds": 603.015000000014,
+          "usage": {
+            "input_tokens": 5051012,
+            "cached_input_tokens": 4899328,
+            "output_tokens": 24699
+          },
+          "helpers": 0,
+          "patch_bytes": 32479,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-calibration-v1/runs-v2/valid-014/python-statemachine-state-data-s__LYN5z64"
+        },
+        "current": {
+          "attempt": "full-014",
+          "status": "completed",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 72,
+            "f2p_passed": 0,
+            "p2p_total": 1286,
+            "p2p_passed": 1286,
+            "f2p": 0.0,
+            "p2p": 1.0,
+            "partial": 0.946980854197349
+          },
+          "native_seconds": 973.8589999999967,
+          "usage": {
+            "input_tokens": 13413535,
+            "cached_input_tokens": 12983552,
+            "output_tokens": 45418
+          },
+          "helpers": 1,
+          "patch_bytes": 0,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-current-global-v1/runs-full/full-014/python-statemachine-state-data-s__YRjMTpz"
+        },
+        "updated": {
+          "attempt": "updated-014",
+          "status": "completed",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 72,
+            "f2p_passed": 0,
+            "p2p_total": 1286,
+            "p2p_passed": 1286,
+            "f2p": 0.0,
+            "p2p": 1.0,
+            "partial": 0.946980854197349
+          },
+          "native_seconds": 656.7969999999623,
+          "usage": {
+            "input_tokens": 6341762,
+            "cached_input_tokens": 6176768,
+            "output_tokens": 25232
+          },
+          "helpers": 0,
+          "patch_bytes": 0,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-updated-global-v1/runs-full/updated-014/python-statemachine-state-data-s__NtKqTPS"
+        }
+      },
+      "excluded_from_matched_effect": false
+    },
+    {
+      "slot": "015",
+      "setting": "sol-high",
+      "task": "kcp-go-multiplexed-kcp-streams",
+      "grader_interference_arms": [],
+      "arms": {
+        "none": {
+          "attempt": "valid-015",
+          "status": "completed",
+          "reward": {
+            "reward": 1,
+            "f2p_total": 30,
+            "f2p_passed": 30,
+            "p2p_total": 12,
+            "p2p_passed": 12,
+            "f2p": 1.0,
+            "p2p": 1.0,
+            "partial": 1.0
+          },
+          "native_seconds": 1011.0939999999828,
+          "usage": {
+            "input_tokens": 1366106,
+            "cached_input_tokens": 1289728,
+            "output_tokens": 27263
+          },
+          "helpers": 0,
+          "patch_bytes": 31688,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-calibration-v1/runs-v2/valid-015/kcp-go-multiplexed-kcp-streams__8qViSqc"
+        },
+        "current": {
+          "attempt": "full-015",
+          "status": "timeout",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 30,
+            "f2p_passed": 0,
+            "p2p_total": 12,
+            "p2p_passed": 12,
+            "f2p": 0.0,
+            "p2p": 1.0,
+            "partial": 0.2857142857142857
+          },
+          "native_seconds": 1193.8279999999795,
+          "usage": {
+            "input_tokens": 2467200,
+            "cached_input_tokens": 2277632,
+            "output_tokens": 63285
+          },
+          "helpers": 2,
+          "patch_bytes": 0,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-current-global-v1/runs-full/full-015/kcp-go-multiplexed-kcp-streams__bRdPd2d"
+        },
+        "updated": {
+          "attempt": "updated-015",
+          "status": "timeout",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 30,
+            "f2p_passed": 0,
+            "p2p_total": 12,
+            "p2p_passed": 12,
+            "f2p": 0.0,
+            "p2p": 1.0,
+            "partial": 0.2857142857142857
+          },
+          "native_seconds": 1193.7030000000377,
+          "usage": {
+            "input_tokens": 5623480,
+            "cached_input_tokens": 5352576,
+            "output_tokens": 56090
+          },
+          "helpers": 2,
+          "patch_bytes": 0,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-updated-global-v1/runs-full/updated-015/kcp-go-multiplexed-kcp-streams__kCLp8nJ"
+        }
+      },
+      "excluded_from_matched_effect": false
+    },
+    {
+      "slot": "016",
+      "setting": "terra-high",
+      "task": "obsidian-linter-link-format-conversion",
+      "grader_interference_arms": [],
+      "arms": {
+        "none": {
+          "attempt": "valid-016",
+          "status": "completed",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 60,
+            "f2p_passed": 59,
+            "p2p_total": 1131,
+            "p2p_passed": 1131,
+            "f2p": 0.9833333333333333,
+            "p2p": 1.0,
+            "partial": 0.9991603694374476
+          },
+          "native_seconds": 337.35899999999674,
+          "usage": {
+            "input_tokens": 1381200,
+            "cached_input_tokens": 1294080,
+            "output_tokens": 14520
+          },
+          "helpers": 0,
+          "patch_bytes": 14213,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-calibration-v1/runs-v2/valid-016/obsidian-linter-link-format-conv__KLHfoZz"
+        },
+        "current": {
+          "attempt": "full-016",
+          "status": "completed",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 60,
+            "f2p_passed": 59,
+            "p2p_total": 1131,
+            "p2p_passed": 1131,
+            "f2p": 0.9833333333333333,
+            "p2p": 1.0,
+            "partial": 0.9991603694374476
+          },
+          "native_seconds": 444.39100000000326,
+          "usage": {
+            "input_tokens": 3887489,
+            "cached_input_tokens": 3653376,
+            "output_tokens": 32987
+          },
+          "helpers": 1,
+          "patch_bytes": 14077,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-current-global-v1/runs-full/full-016/obsidian-linter-link-format-conv__thj3nLz"
+        },
+        "updated": {
+          "attempt": "updated-016",
+          "status": "completed",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 60,
+            "f2p_passed": 58,
+            "p2p_total": 1131,
+            "p2p_passed": 1131,
+            "f2p": 0.9666666666666667,
+            "p2p": 1.0,
+            "partial": 0.998320738874895
+          },
+          "native_seconds": 499.76600000000326,
+          "usage": {
+            "input_tokens": 2417550,
+            "cached_input_tokens": 2308352,
+            "output_tokens": 20751
+          },
+          "helpers": 0,
+          "patch_bytes": 15763,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-updated-global-v1/runs-full/updated-016/obsidian-linter-link-format-conv__PpAMr8g"
+        }
+      },
+      "excluded_from_matched_effect": false
+    },
+    {
+      "slot": "017",
+      "setting": "luna-medium",
+      "task": "python-statemachine-state-data-scoping",
+      "grader_interference_arms": [],
+      "arms": {
+        "none": {
+          "attempt": "valid-017",
+          "status": "completed",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 72,
+            "f2p_passed": 43,
+            "p2p_total": 1286,
+            "p2p_passed": 1284,
+            "f2p": 0.5972222222222222,
+            "p2p": 0.9984447900466563,
+            "partial": 0.9771723122238586
+          },
+          "native_seconds": 283.7970000000205,
+          "usage": {
+            "input_tokens": 1854784,
+            "cached_input_tokens": 1772288,
+            "output_tokens": 12590
+          },
+          "helpers": 0,
+          "patch_bytes": 15520,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-calibration-v1/runs-v2/valid-017/python-statemachine-state-data-s__RCXrmqG"
+        },
+        "current": {
+          "attempt": "full-017",
+          "status": "completed",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 72,
+            "f2p_passed": 39,
+            "p2p_total": 1286,
+            "p2p_passed": 1286,
+            "f2p": 0.5416666666666666,
+            "p2p": 1.0,
+            "partial": 0.975699558173785
+          },
+          "native_seconds": 395.10999999998603,
+          "usage": {
+            "input_tokens": 6300586,
+            "cached_input_tokens": 5981440,
+            "output_tokens": 27367
+          },
+          "helpers": 1,
+          "patch_bytes": 16182,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-current-global-v1/runs-full/full-017/python-statemachine-state-data-s__w27qswx"
+        },
+        "updated": {
+          "attempt": "updated-017",
+          "status": "completed",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 72,
+            "f2p_passed": 67,
+            "p2p_total": 1286,
+            "p2p_passed": 1286,
+            "f2p": 0.9305555555555556,
+            "p2p": 1.0,
+            "partial": 0.9963181148748159
+          },
+          "native_seconds": 440.35899999999674,
+          "usage": {
+            "input_tokens": 3811404,
+            "cached_input_tokens": 3694848,
+            "output_tokens": 18487
+          },
+          "helpers": 0,
+          "patch_bytes": 18051,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-updated-global-v1/runs-full/updated-017/python-statemachine-state-data-s__JdA9zFY"
+        }
+      },
+      "excluded_from_matched_effect": false
+    },
+    {
+      "slot": "018",
+      "setting": "luna-max",
+      "task": "obsidian-linter-link-format-conversion",
+      "grader_interference_arms": [],
+      "arms": {
+        "none": {
+          "attempt": "valid-018",
+          "status": "timeout",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 60,
+            "f2p_passed": 0,
+            "p2p_total": 1131,
+            "p2p_passed": 1131,
+            "f2p": 0.0,
+            "p2p": 1.0,
+            "partial": 0.9496221662468514
+          },
+          "native_seconds": 1194.2189999999828,
+          "usage": {
+            "input_tokens": 8223871,
+            "cached_input_tokens": 7999232,
+            "output_tokens": 54873
+          },
+          "helpers": 0,
+          "patch_bytes": 0,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-calibration-v1/runs-v2/valid-018/obsidian-linter-link-format-conv__cd92MVE"
+        },
+        "current": {
+          "attempt": "full-018",
+          "status": "timeout",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 60,
+            "f2p_passed": 0,
+            "p2p_total": 1131,
+            "p2p_passed": 1131,
+            "f2p": 0.0,
+            "p2p": 1.0,
+            "partial": 0.9496221662468514
+          },
+          "native_seconds": 1193.9380000000237,
+          "usage": {
+            "input_tokens": 16934293,
+            "cached_input_tokens": 16378880,
+            "output_tokens": 89752
+          },
+          "helpers": 1,
+          "patch_bytes": 0,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-current-global-v1/runs-full/full-018/obsidian-linter-link-format-conv__5cnWXm7"
+        },
+        "updated": {
+          "attempt": "updated-018",
+          "status": "timeout",
+          "reward": {
+            "reward": 0,
+            "f2p_total": 60,
+            "f2p_passed": 59,
+            "p2p_total": 1131,
+            "p2p_passed": 1131,
+            "f2p": 0.9833333333333333,
+            "p2p": 1.0,
+            "partial": 0.9991603694374476
+          },
+          "native_seconds": 1193.6869999999763,
+          "usage": {
+            "input_tokens": 8118029,
+            "cached_input_tokens": 7908864,
+            "output_tokens": 55018
+          },
+          "helpers": 0,
+          "patch_bytes": 21171,
+          "missing_usage_sessions": [],
+          "helper_routes_compliant": true,
+          "archive_evidence": "deepswe-updated-global-v1/runs-full/updated-018/obsidian-linter-link-format-conv__oojCfDw"
+        }
+      },
+      "excluded_from_matched_effect": false
+    }
+  ],
+  "totals": {
+    "none": {
+      "attempts": 18,
+      "complete_passes": 2,
+      "timeouts": 4,
+      "invalid": 0,
+      "empty_committed_patches": 4,
+      "native_seconds": 13908.0,
+      "helpers": 0,
+      "usage": {
+        "input_tokens": 74016319,
+        "cached_input_tokens": 71626112,
+        "output_tokens": 517659
+      },
+      "missing_usage_sessions": [],
+      "helper_route_violations": []
+    },
+    "current": {
+      "attempts": 18,
+      "complete_passes": 6,
+      "timeouts": 6,
+      "invalid": 0,
+      "empty_committed_patches": 6,
+      "native_seconds": 15459.750999999931,
+      "helpers": 19,
+      "usage": {
+        "input_tokens": 147164023,
+        "cached_input_tokens": 141521536,
+        "output_tokens": 857919
+      },
+      "missing_usage_sessions": [],
+      "helper_route_violations": []
+    },
+    "updated": {
+      "attempts": 18,
+      "complete_passes": 4,
+      "timeouts": 8,
+      "invalid": 0,
+      "empty_committed_patches": 6,
+      "native_seconds": 15749.82600000006,
+      "helpers": 10,
+      "usage": {
+        "input_tokens": 148560215,
+        "cached_input_tokens": 144364800,
+        "output_tokens": 734253
+      },
+      "missing_usage_sessions": [],
+      "helper_route_violations": []
+    }
+  },
+  "settings": {
+    "luna-medium": {
+      "none": {
+        "attempts": 3,
+        "complete_passes": 0,
+        "timeouts": 0,
+        "invalid": 0,
+        "empty_committed_patches": 0,
+        "native_seconds": 1058.2810000000172,
+        "helpers": 0,
+        "usage": {
+          "input_tokens": 4164840,
+          "cached_input_tokens": 3923712,
+          "output_tokens": 34623
+        },
+        "missing_usage_sessions": [],
+        "helper_route_violations": []
+      },
+      "current": {
+        "attempts": 3,
+        "complete_passes": 1,
+        "timeouts": 0,
+        "invalid": 0,
+        "empty_committed_patches": 0,
+        "native_seconds": 1461.9539999999688,
+        "helpers": 3,
+        "usage": {
+          "input_tokens": 15657910,
+          "cached_input_tokens": 14833664,
+          "output_tokens": 86412
+        },
+        "missing_usage_sessions": [],
+        "helper_route_violations": []
+      },
+      "updated": {
+        "attempts": 3,
+        "complete_passes": 1,
+        "timeouts": 0,
+        "invalid": 0,
+        "empty_committed_patches": 0,
+        "native_seconds": 1204.7649999999558,
+        "helpers": 0,
+        "usage": {
+          "input_tokens": 5556550,
+          "cached_input_tokens": 5313280,
+          "output_tokens": 39924
+        },
+        "missing_usage_sessions": [],
+        "helper_route_violations": []
+      }
+    },
+    "luna-high": {
+      "none": {
+        "attempts": 3,
+        "complete_passes": 1,
+        "timeouts": 0,
+        "invalid": 0,
+        "empty_committed_patches": 0,
+        "native_seconds": 2568.359999999986,
+        "helpers": 0,
+        "usage": {
+          "input_tokens": 17678654,
+          "cached_input_tokens": 17211392,
+          "output_tokens": 104114
+        },
+        "missing_usage_sessions": [],
+        "helper_route_violations": []
+      },
+      "current": {
+        "attempts": 3,
+        "complete_passes": 2,
+        "timeouts": 1,
+        "invalid": 0,
+        "empty_committed_patches": 1,
+        "native_seconds": 2751.0630000000237,
+        "helpers": 3,
+        "usage": {
+          "input_tokens": 30279106,
+          "cached_input_tokens": 29166080,
+          "output_tokens": 165468
+        },
+        "missing_usage_sessions": [],
+        "helper_route_violations": []
+      },
+      "updated": {
+        "attempts": 3,
+        "complete_passes": 1,
+        "timeouts": 1,
+        "invalid": 0,
+        "empty_committed_patches": 0,
+        "native_seconds": 2804.3580000000075,
+        "helpers": 0,
+        "usage": {
+          "input_tokens": 24960497,
+          "cached_input_tokens": 24421120,
+          "output_tokens": 100422
+        },
+        "missing_usage_sessions": [],
+        "helper_route_violations": []
+      }
+    },
+    "luna-max": {
+      "none": {
+        "attempts": 3,
+        "complete_passes": 0,
+        "timeouts": 3,
+        "invalid": 0,
+        "empty_committed_patches": 3,
+        "native_seconds": 3582.7189999999828,
+        "helpers": 0,
+        "usage": {
+          "input_tokens": 27286229,
+          "cached_input_tokens": 26601984,
+          "output_tokens": 169611
+        },
+        "missing_usage_sessions": [],
+        "helper_route_violations": []
+      },
+      "current": {
+        "attempts": 3,
+        "complete_passes": 0,
+        "timeouts": 3,
+        "invalid": 0,
+        "empty_committed_patches": 2,
+        "native_seconds": 3581.8279999999795,
+        "helpers": 3,
+        "usage": {
+          "input_tokens": 43028363,
+          "cached_input_tokens": 41692672,
+          "output_tokens": 230654
+        },
+        "missing_usage_sessions": [],
+        "helper_route_violations": []
+      },
+      "updated": {
+        "attempts": 3,
+        "complete_passes": 0,
+        "timeouts": 3,
+        "invalid": 0,
+        "empty_committed_patches": 2,
+        "native_seconds": 3581.1870000000345,
+        "helpers": 1,
+        "usage": {
+          "input_tokens": 35548269,
+          "cached_input_tokens": 34620416,
+          "output_tokens": 193223
+        },
+        "missing_usage_sessions": [],
+        "helper_route_violations": []
+      }
+    },
+    "terra-high": {
+      "none": {
+        "attempts": 3,
+        "complete_passes": 0,
+        "timeouts": 0,
+        "invalid": 0,
+        "empty_committed_patches": 0,
+        "native_seconds": 1545.4679999999935,
+        "helpers": 0,
+        "usage": {
+          "input_tokens": 7339786,
+          "cached_input_tokens": 7038720,
+          "output_tokens": 64272
+        },
+        "missing_usage_sessions": [],
+        "helper_route_violations": []
+      },
+      "current": {
+        "attempts": 3,
+        "complete_passes": 1,
+        "timeouts": 0,
+        "invalid": 0,
+        "empty_committed_patches": 1,
+        "native_seconds": 2008.1869999999763,
+        "helpers": 3,
+        "usage": {
+          "input_tokens": 19177313,
+          "cached_input_tokens": 18381312,
+          "output_tokens": 104942
+        },
+        "missing_usage_sessions": [],
+        "helper_route_violations": []
+      },
+      "updated": {
+        "attempts": 3,
+        "complete_passes": 1,
+        "timeouts": 0,
+        "invalid": 0,
+        "empty_committed_patches": 1,
+        "native_seconds": 1868.5479999999516,
+        "helpers": 0,
+        "usage": {
+          "input_tokens": 10681170,
+          "cached_input_tokens": 10315776,
+          "output_tokens": 73544
+        },
+        "missing_usage_sessions": [],
+        "helper_route_violations": []
+      }
+    },
+    "sol-high": {
+      "none": {
+        "attempts": 3,
+        "complete_passes": 1,
+        "timeouts": 1,
+        "invalid": 0,
+        "empty_committed_patches": 1,
+        "native_seconds": 2829.9530000000377,
+        "helpers": 0,
+        "usage": {
+          "input_tokens": 12920957,
+          "cached_input_tokens": 12559104,
+          "output_tokens": 84731
+        },
+        "missing_usage_sessions": [],
+        "helper_route_violations": []
+      },
+      "current": {
+        "attempts": 3,
+        "complete_passes": 1,
+        "timeouts": 2,
+        "invalid": 0,
+        "empty_committed_patches": 2,
+        "native_seconds": 3519.0939999999246,
+        "helpers": 4,
+        "usage": {
+          "input_tokens": 22871945,
+          "cached_input_tokens": 22030080,
+          "output_tokens": 164945
+        },
+        "missing_usage_sessions": [],
+        "helper_route_violations": []
+      },
+      "updated": {
+        "attempts": 3,
+        "complete_passes": 0,
+        "timeouts": 2,
+        "invalid": 0,
+        "empty_committed_patches": 2,
+        "native_seconds": 3425.234000000055,
+        "helpers": 7,
+        "usage": {
+          "input_tokens": 49848761,
+          "cached_input_tokens": 48289280,
+          "output_tokens": 217583
+        },
+        "missing_usage_sessions": [],
+        "helper_route_violations": []
+      }
+    },
+    "astra-high": {
+      "none": {
+        "attempts": 3,
+        "complete_passes": 0,
+        "timeouts": 0,
+        "invalid": 0,
+        "empty_committed_patches": 0,
+        "native_seconds": 2323.2189999999828,
+        "helpers": 0,
+        "usage": {
+          "input_tokens": 4625853,
+          "cached_input_tokens": 4291200,
+          "output_tokens": 60308
+        },
+        "missing_usage_sessions": [],
+        "helper_route_violations": []
+      },
+      "current": {
+        "attempts": 3,
+        "complete_passes": 1,
+        "timeouts": 0,
+        "invalid": 0,
+        "empty_committed_patches": 0,
+        "native_seconds": 2137.625000000058,
+        "helpers": 3,
+        "usage": {
+          "input_tokens": 16149386,
+          "cached_input_tokens": 15417728,
+          "output_tokens": 105498
+        },
+        "missing_usage_sessions": [],
+        "helper_route_violations": []
+      },
+      "updated": {
+        "attempts": 3,
+        "complete_passes": 1,
+        "timeouts": 2,
+        "invalid": 0,
+        "empty_committed_patches": 1,
+        "native_seconds": 2865.734000000055,
+        "helpers": 2,
+        "usage": {
+          "input_tokens": 21964968,
+          "cached_input_tokens": 21404928,
+          "output_tokens": 109557
+        },
+        "missing_usage_sessions": [],
+        "helper_route_violations": []
+      }
+    }
+  },
+  "new_grading_limitations": {
+    "attempts": {}
+  },
+  "matched": {
+    "triplets": 17,
+    "excluded_slots": [
+      "010"
+    ],
+    "passes": {
+      "none": 2,
+      "current": 5,
+      "updated": 3
+    },
+    "updated_vs_none": {
+      "complete_pass": {
+        "improved": [
+          "004",
+          "011"
+        ],
+        "unchanged": [
+          "001",
+          "002",
+          "003",
+          "005",
+          "006",
+          "007",
+          "008",
+          "009",
+          "012",
+          "013",
+          "014",
+          "016",
+          "017",
+          "018"
+        ],
+        "declined": [
+          "015"
+        ]
+      },
+      "feature_checks": {
+        "improved": [
+          "004",
+          "011",
+          "017",
+          "018"
+        ],
+        "unchanged": [
+          "001",
+          "002",
+          "003",
+          "005",
+          "006",
+          "008",
+          "012",
+          "013"
+        ],
+        "declined": [
+          "007",
+          "009",
+          "014",
+          "015",
+          "016"
+        ]
+      },
+      "regression_checks": {
+        "improved": [
+          "014",
+          "017"
+        ],
+        "unchanged": [
+          "001",
+          "002",
+          "003",
+          "004",
+          "005",
+          "006",
+          "007",
+          "008",
+          "009",
+          "011",
+          "012",
+          "013",
+          "015",
+          "016",
+          "018"
+        ],
+        "declined": []
+      }
+    },
+    "updated_vs_current": {
+      "complete_pass": {
+        "improved": [
+          "011"
+        ],
+        "unchanged": [
+          "002",
+          "003",
+          "004",
+          "005",
+          "007",
+          "008",
+          "009",
+          "013",
+          "014",
+          "015",
+          "016",
+          "017",
+          "018"
+        ],
+        "declined": [
+          "001",
+          "006",
+          "012"
+        ]
+      },
+      "feature_checks": {
+        "improved": [
+          "007",
+          "011",
+          "017",
+          "018"
+        ],
+        "unchanged": [
+          "002",
+          "003",
+          "004",
+          "005",
+          "008",
+          "013",
+          "014",
+          "015"
+        ],
+        "declined": [
+          "001",
+          "006",
+          "009",
+          "012",
+          "016"
+        ]
+      },
+      "regression_checks": {
+        "improved": [],
+        "unchanged": [
+          "001",
+          "002",
+          "003",
+          "004",
+          "005",
+          "006",
+          "007",
+          "008",
+          "009",
+          "011",
+          "012",
+          "013",
+          "014",
+          "015",
+          "016",
+          "017",
+          "018"
+        ],
+        "declined": []
+      }
+    }
+  },
+  "pairwise": {
+    "updated_vs_none": {
+      "pairs": 17,
+      "excluded_slots": [
+        "010"
+      ],
+      "prior_passes": 2,
+      "updated_passes": 3,
+      "complete_pass": {
+        "improved": [
+          "004",
+          "011"
+        ],
+        "unchanged": [
+          "001",
+          "002",
+          "003",
+          "005",
+          "006",
+          "007",
+          "008",
+          "009",
+          "012",
+          "013",
+          "014",
+          "016",
+          "017",
+          "018"
+        ],
+        "declined": [
+          "015"
+        ]
+      },
+      "feature_checks": {
+        "improved": [
+          "004",
+          "011",
+          "017",
+          "018"
+        ],
+        "unchanged": [
+          "001",
+          "002",
+          "003",
+          "005",
+          "006",
+          "008",
+          "012",
+          "013"
+        ],
+        "declined": [
+          "007",
+          "009",
+          "014",
+          "015",
+          "016"
+        ]
+      },
+      "regression_checks": {
+        "improved": [
+          "014",
+          "017"
+        ],
+        "unchanged": [
+          "001",
+          "002",
+          "003",
+          "004",
+          "005",
+          "006",
+          "007",
+          "008",
+          "009",
+          "011",
+          "012",
+          "013",
+          "015",
+          "016",
+          "018"
+        ],
+        "declined": []
+      }
+    },
+    "updated_vs_current": {
+      "pairs": 18,
+      "excluded_slots": [],
+      "prior_passes": 6,
+      "updated_passes": 4,
+      "complete_pass": {
+        "improved": [
+          "011"
+        ],
+        "unchanged": [
+          "002",
+          "003",
+          "004",
+          "005",
+          "007",
+          "008",
+          "009",
+          "010",
+          "013",
+          "014",
+          "015",
+          "016",
+          "017",
+          "018"
+        ],
+        "declined": [
+          "001",
+          "006",
+          "012"
+        ]
+      },
+      "feature_checks": {
+        "improved": [
+          "007",
+          "011",
+          "017",
+          "018"
+        ],
+        "unchanged": [
+          "002",
+          "003",
+          "004",
+          "005",
+          "008",
+          "010",
+          "013",
+          "014",
+          "015"
+        ],
+        "declined": [
+          "001",
+          "006",
+          "009",
+          "012",
+          "016"
+        ]
+      },
+      "regression_checks": {
+        "improved": [],
+        "unchanged": [
+          "001",
+          "002",
+          "003",
+          "004",
+          "005",
+          "006",
+          "007",
+          "008",
+          "009",
+          "010",
+          "011",
+          "012",
+          "013",
+          "014",
+          "015",
+          "016",
+          "017",
+          "018"
+        ],
+        "declined": []
+      }
+    }
+  }
+}

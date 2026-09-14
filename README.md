@@ -27,6 +27,10 @@ Exit codes: `0` means ready, `2` means valid input with blocking checks, `64` me
 
 This repository intentionally contains only the green baseline. Do not treat its baseline test output as a benchmark result. A later, separately recorded session may perform [Benchmark 001](benchmark-001/TASK.md), then follow its [acceptance](benchmark-001/ACCEPTANCE.md) and [reset](benchmark-001/RESET.md) instructions. The future feature is not implemented in this baseline.
 
+## Instruction and skill research
+
+The [research archive](research/README.md) records the skill studies, their isolation correction, controlled global-instruction screens, known-answer coding calibration, and the completed [three-arm DeepSWE comparison](research/deepswe-2026-09/README.md). It includes instruction snapshots, compact results, source provenance, replay instructions, [credit accounting](research/deepswe-2026-09/credits.md), and both retained guides. The [continuation guide](research/CONTINUE.md) identifies the current evidence, portable tools, and the delegation experiment paused before scored execution. These studies are separate from the original Benchmark 001 fixture and do not alter its acceptance contract.
+
 ## License
 
 MIT. See [LICENSE](LICENSE).

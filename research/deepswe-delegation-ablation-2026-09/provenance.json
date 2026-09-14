@@ -1,0 +1,21 @@
+{
+  "local_archive": "deepswe-delegation-ablation-v1",
+  "complete_evidence_seal": false,
+  "state": "paused_by_user_for_cost",
+  "source_files": {
+    "PLAN.md": "e46a5ecaf65a462bfc1cd068420a88c6745dc7d9e6579d250162ab1346932e1e",
+    "prepare.py": "50950b6e5d2eacef4f0b0fd150bc136167d572f608fce9b7343049b15a4da38c",
+    "build_runtime.py": "784173e17855b7fa8fc17dabf974ae39271eaed46f84815251003f80b3e7ec78",
+    "controlled_codex.py": "9cebbc19bb675d61a0c46873f28b0132a362981bf5e096c48d099f043047f50a",
+    "probe.py": "be317515cce899e1167cd1d260f43eb52e2dcad2af2d6819f549295bb5d89041",
+    "experiment.py": "672e8e09e1a15167ad960dc505876f9888b02d068f993f39026aca1013905beb",
+    "probe-status.json": "e440c443a6c3b6a80f664a77f1dd35721dc53477c023693c52c6f702a6fe9f7c",
+    "pause-status.json": "ede789c32191d5ce069d91644a73e8c84fec7321b175655b778ec6e915283943",
+    "instructions/current.md": "03f0069eeba198806c29dbc24a88097220c7fd5af10aaff265d8b377b8b5e325",
+    "instructions/without-subagents.md": "6289e29dad807d127e1ce2a2997dcffdcc14a3e7c00e43836d2800d9c6c59e1f",
+    "instruction-edits.json": "a8533e18fc69dc56ada6600041b66711f7a9fb7f04294a31f45cc2461d048788",
+    "instructions.patch": "65dce50de4fbf409ec422c987202f2f3faf8a2afd11e65c0c4ff19945cb1fb65",
+    "runtime.patch": "6865c471e10f8b3e40158240f3ba66e8daf38aa0f39b560c48e766c3e41202b5"
+  },
+  "draft_portability_changes": "Research-controller private path constants replaced by explicit workspace settings; original completed-study data remains in its own package; prior raw-archive dependency removed from draft replay. Runtime capability gate remains unresolved."
+}
