@@ -1,0 +1,92 @@
+{
+  "018": {
+    "reviewed": true,
+    "finding": "59/60 feature checks and all 1131 regressions pass on committed patch bd8ab85 (21171 bytes). The sole miss is the known oracle rejection of valid angle-bracket syntax for spaced destinations. Both earlier Luna/max link attempts timed out with no committed patch, so this is a substantial submitted-feature improvement without a raw whole-task pass. Do not infer a functional defect from the sole oracle mismatch.",
+    "workflow": "The native author timed out at 19.89 minutes after committing; submission status is clean, and no final handoff was emitted. Zero helpers. Author reported 1190 passing local tests and lint, qualified dependency-related build failure, then finished documentation and encountered missing Git identity near cutoff. The captured commit establishes submission despite that obstacle; author-reported checks remain distinct from independent grading."
+  },
+  "017": {
+    "reviewed": true,
+    "finding": "67/72 feature checks and all 1286 regressions pass, compared with baseline 43/72 plus 1284/1286 regressions and previous globals 39/72 plus all regressions. Three misses concern the known implicit active-no-declared-data None-versus-empty-dict contract. Two concrete hierarchical-scoping failures expose the parent's value where the child's value must shadow it, in sync and async engines. This is a large observed feature-coverage improvement without full task acceptance.",
+    "workflow": "Committed 2c6090c (18051 bytes), clean submission, 7.34 native minutes and zero helpers. Author reported compile and manual smoke checks, qualified the uv dependency-download blocker, and resolved missing Git identity locally. The independent grader supplies broader test evidence than the author's local smoke checks."
+  },
+  "015": {
+    "reviewed": true,
+    "finding": "Timeout at 19.90 native minutes with zero committed patch bytes: snmp.go modified, mux.go and mux_test.go untracked. All 30 feature results are missing because no mux implementation was submitted; all 12 selected regressions pass. Baseline passed this task; previous globals also timed out with no patch. This is a submission failure under the cap, not 30 independently demonstrated implementation defects.",
+    "workflow": "Two Luna/max helpers for design evidence and independent review. Author reported ten passing targeted race repetitions, vet passing and a broad stress-test timeout, then continued validation. Near cutoff it reported the reviewer stuck in validation and sought a shorter review from the same node. The record shows coordination and validation still unresolved before submission; it does not isolate their causal contribution from implementation or other instruction effects."
+  },
+  "016": {
+    "reviewed": true,
+    "finding": "58/60 feature checks and all 1131 regressions pass. Markdown destinations with trailing whitespace are left unconverted, the same concrete conversion miss as both prior arms. The additional miss is valid angle-bracket syntax for a spaced destination rejected by the known oracle overconstraint. Both prior arms scored 59/60, so the one-check decline does not establish an additional functional defect.",
+    "workflow": "Committed 29de90e (15763 bytes), clean submission, 8.33 native minutes and zero helpers. Author reported 1189 passing tests and targeted lint, while qualifying build/type-check dependency failures. It used an explicit repository-local Codex identity to commit, unlike its Python attempt under the same global text. This within-model variation cautions against treating one observed authorization decision as a reliable general policy."
+  },
+  "014": {
+    "reviewed": true,
+    "finding": "Normal author stop after 10.95 native minutes, with zero committed patch bytes and 13 staged source/test paths. All 72 feature checks fail on unchanged submitted code; all 1286 selected regressions pass. Same submission failure as previous globals. Baseline submitted a patch scoring 67/72 features and 1262/1286 regressions. Passing regressions on this unchanged submission do not demonstrate a repaired implementation.",
+    "workflow": "Zero helpers. Author reported 118 passing affected tests and 142 skips, with uv-managed checks blocked by a dependency download. Git commit then failed for missing author identity. The final response explicitly requested a name/email or authorization to reuse a previous repository author's identity, leaving the staged implementation uncommitted. The revised permission-reuse wording did not prevent this stop. This is a committed-submission failure, not proof that asking for accurate attribution is inherently unsafe or that the uncommitted feature is incorrect. No coaching or retry was supplied."
+  },
+  "013": {
+    "reviewed": true,
+    "finding": "59/60 feature checks and all 1131 regressions pass. The sole miss is the known oracle rejection of valid angle-bracket syntax around a spaced destination. Same score and same mismatch as both earlier Astra arms; do not call this a demonstrated functional defect.",
+    "workflow": "Committed 38b5e07 (19329 bytes), clean submission, 7.97 native minutes and zero helpers. Author reported 1263 passing tests, lint and build; the build used local links to already installed dependencies. It explicitly qualified type-check failure and reported comparing its 18 diagnostics with main. Independent selected tests establish the acceptance counts, not the broader author-reported type-check comparison."
+  },
+  "011": {
+    "reviewed": true,
+    "finding": "All 30 feature and 12 regression checks pass on committed patch 84a45f4 (15576 bytes). Baseline reached 13/30 feature checks before a suite hang; previous globals executed all feature checks and passed 26/30. Revised is a full accepted submission in this cell, without treating missing baseline checks as separate bugs.",
+    "workflow": "Completed within 7.95 native minutes, zero helpers, clean submission. Author reported targeted vet/race checks and a prior full run passing; a subsequent full suite encountered a port collision. The final handoff disclosed the collision. Its characterization as existing is author-reported, not independently established by the selected grader. Missing Git identity was resolved locally."
+  },
+  "012": {
+    "reviewed": true,
+    "finding": "58/60 feature checks and all 1131 regressions pass. Wiki image embeds with numeric or NxN dimensions become ![](photo.png), while the oracle requires filename alt text ![photo.png](photo.png). These are different from baseline's two option-isolation failures, despite the same total score. Previous globals passed all 60 checks. Preserve both the raw count and which behavior changed.",
+    "workflow": "Completed and committed 47d5e86 with a clean submission in 4.79 native minutes, zero helpers. Author reported 1191 passing local tests and used repository-local Codex identity to complete the authorized commit. Earlier commentary disclosed unavailable documentation generation and dependency-related build/type-check limits; the final handoff did not repeat those limitations."
+  },
+  "010": {
+    "reviewed": true,
+    "finding": "All 30 feature and 12 regression checks pass on the committed 44425-byte patch b533282. The author session timed out at 19.90 native minutes after committing, so this is an accepted patch with an unfinished final handoff. Previous globals also passed. Baseline's confirmed grader-overlay fault prevents a valid comparison to baseline here; it does not invalidate the direct previous-versus-revised pair.",
+    "workflow": "One Luna/max helper. Submission status is clean. Author reported the regular suite, targeted race checks and vet passing, and disclosed the full race run timing out in Test6GBEcho. Selected independent acceptance passed; the broader stress-test timeout remains a separate validation limit."
+  },
+  "009": {
+    "reviewed": true,
+    "finding": "Timeout at 19.90 native minutes with zero committed patch bytes. Eighteen tracked paths remained modified and three source/test files untracked. The unchanged submitted code fails all 72 feature checks and passes all 1286 selected regressions. Both earlier arms submitted patches scoring 69/72, so this is a real loss of submitted feature coverage, not evidence of 72 defects in the uncommitted implementation.",
+    "workflow": "One Luna/max helper. Author reported a full suite with 1469 passed, 143 skipped and 44 expected failures, then continued changed-line coverage and final diff review before committing. Author also disclosed blocked environment/static-analysis downloads. Independent grading did not receive that implementation. No evidence establishes that the revised instruction text alone caused the missed submission."
+  },
+  "001": {
+    "reviewed": true,
+    "finding": "59/60 feature checks and all 1131 regressions. The sole miss is valid angle-bracket syntax for a link destination containing spaces, the pre-existing oracle overconstraint. Baseline also scored 59 but missed trailing destination whitespace instead. Previous globals scored 60. Do not call the revised raw loss a demonstrated functional defect.",
+    "workflow": "Committed within 10.03 native minutes, zero helpers. Author reported build limitations separately from passing local tests and lint."
+  },
+  "002": {
+    "reviewed": true,
+    "finding": "All 30 feature and 12 regression checks passed in all three arms.",
+    "workflow": "Committed within 16.81 native minutes, zero helpers. Author reported a full-suite TestClose timeout and used targeted/race validation; selected independent grading passed. The author's characterization of the full-suite issue as pre-existing is not independently established here."
+  },
+  "003": {
+    "reviewed": true,
+    "finding": "Timeout at 19.90 native minutes with zero committed patch bytes. All 72 feature checks fail on unchanged code while all 1286 regressions pass. Same submission outcome as both previous arms; not 72 demonstrated defects in the uncommitted implementation.",
+    "workflow": "Three native Luna/max helpers. Submission status retains 17 modified tracked paths and two untracked source/test paths. Author reported 1420 passing tests and a doctest correction, then continued coverage work and planned another full run before the external deadline. Those reports do not establish hidden-test acceptance."
+  },
+  "007": {
+    "reviewed": true,
+    "finding": "Timeout with a committed 32659-byte patch (3de2e4e); 65/72 feature checks and all 1286 regressions pass. Three misses are the known active-no-declaration empty-dict versus None contract. Two SCXML checks cannot find initialized x/counter values. Two additional checks see a fresh s2 initialization DataChangeInfo where the oracle expects no change records. Their test names suggest uncleared history, but the surviving record is a new state's default, not the previous state's mutation. The task says records clear at macrostep boundaries without explicitly defining whether default initialization is a reportable change; preserve this interpretation caveat rather than calling them two proved stale-history bugs. Baseline scored 67 with the same three None and two SCXML misses; previous globals submitted no patch.",
+    "workflow": "Zero helpers. Author reported 1399 passing local tests after fixing history proxy handling. The commit was captured before grading despite the author command timing out. On missing Git identity, the author announced reuse of an existing repository commit identity; native calls show a prior-author/email query followed by Git configuration and commit. That attribution choice warrants caution and should not be conflated with a transparent temporary Codex identity. No real repository or remote received this benchmark commit."
+  },
+  "008": {
+    "reviewed": true,
+    "finding": "Timeout at 19.90 native minutes with zero committed patch bytes; 18 tracked source paths modified and statemachine/data.py untracked. All 72 feature checks fail on the unchanged submitted code while all 1286 regressions pass. Same committed-submission outcome in all three arms.",
+    "workflow": "One Luna/max architecture helper. Author was addressing callback, history persistence and SCXML integration gaps late in the interval. Native records do not support a completed feature submission."
+  },
+  "005": {
+    "reviewed": true,
+    "finding": "Timeout at 19.89 native minutes with zero committed patch bytes: snmp.go modified, mux.go and mux_test.go untracked. All 30 feature checks lack runnable results because the mux implementation was not submitted; all 12 selected regressions pass. Same zero feature acceptance as baseline and previous globals, though the previous-global attempt had a partial SNMP commit.",
+    "workflow": "Zero helpers. Author reported targeted race tests and go vet passing after a priority propagation fix, then moved to the full package suite and planned final inspection/commit. The deadline arrived before submission; do not treat missing feature checks as independent implementation bugs."
+  },
+  "006": {
+    "reviewed": true,
+    "finding": "58/60 feature checks and all 1131 regressions. Same two misses as baseline Sol: trailing destination whitespace is not converted, and the valid angle-bracket representation is rejected by the known oracle overconstraint. Previous globals passed both. The trailing-whitespace case is a concrete conversion miss, separate from the oracle mismatch.",
+    "workflow": "Committed 1db1524 within 17.30 native minutes with two Luna/max helpers. Author reported 1197 passing local tests and a clean independent review; the independent grader still found the whitespace miss. Missing Git identity was resolved with a nonpersistent Codex identity. Generated documentation churn was narrowed to task-related edits; final committed patch is 23929 bytes."
+  },
+  "004": {
+    "reviewed": true,
+    "finding": "All 30 feature and 12 regression checks passed. Baseline passed 29/30 feature checks; previous globals also passed all checks.",
+    "workflow": "Committed within 11.87 native minutes, zero helpers. Git initially rejected missing identity; author used a command-scoped temporary Codex identity and completed commit 446d845 without changing global Git configuration. This is observed successful handling, not proof that the revised approval sentence caused it."
+  }
+}

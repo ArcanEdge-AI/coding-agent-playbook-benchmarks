@@ -1,0 +1,14 @@
+{
+  "releaseId": "synthetic-2026.08.19",
+  "checks": [
+    { "id": "build", "required": true, "status": "passed" },
+    { "id": "security-scan", "required": true, "status": "failed", "summary": "Synthetic finding awaiting remediation" }
+  ],
+  "waivers": [
+    {
+      "checkId": "security-scan",
+      "reason": "Synthetic time-bounded acceptance example",
+      "expiresAt": "2026-08-20T00:00:00Z"
+    }
+  ]
+}
