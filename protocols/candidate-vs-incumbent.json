@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "suite_id": "arcanedge-coding-v1",
+  "status": "draft",
+  "inference_authorized": false,
+  "ready_for_scored_execution": false,
+  "main_model": null,
+  "main_reasoning_effort": null,
+  "runtime": {
+    "validated": false,
+    "cli_version": null,
+    "harness_revision": null,
+    "capability_evidence_ref": null
+  },
+  "helper_route": {
+    "model": null,
+    "reasoning_effort": null,
+    "enforcement_evidence_ref": null
+  },
+  "budget": {
+    "approved_total_credits": null,
+    "in_flight_reserve_credits": null,
+    "max_author_attempts": null,
+    "authorization_ref": null
+  },
+  "decision_thresholds": {
+    "minimum_cost_reduction": null,
+    "maximum_acceptance_loss": null
+  },
+  "submission": {
+    "deadline_disclosed": true,
+    "commit_required": true,
+    "identity": "ArcanEdge Benchmark <benchmark@example.invalid>"
+  },
+  "policy": {
+    "same_total_workflow_budget_per_attempt": true,
+    "count_all_descendants_and_failures": true,
+    "randomized_matched_blocks": true,
+    "keep_enabled_non_delegating_attempts": true,
+    "retain_historical_scores": true,
+    "automatic_retries": false,
+    "protected_confirmation_required": true
+  },
+  "note": "Design template only. Counts are illustrative and not authorized, frozen schedules, sufficient sample sizes, or validated runtime settings.",
+  "protocol_id": "candidate-vs-incumbent",
+  "comparison_kind": "instruction_revision",
+  "conditions": [
+    {
+      "id": "incumbent",
+      "globals": "incumbent",
+      "helpers_enabled": null,
+      "helper_route": "freeze_identically",
+      "instruction_sha256": null
+    },
+    {
+      "id": "candidate",
+      "globals": "candidate",
+      "helpers_enabled": null,
+      "helper_route": "freeze_identically",
+      "instruction_sha256": null
+    }
+  ],
+  "primary_contrasts": [
+    [
+      "candidate",
+      "incumbent"
+    ]
+  ],
+  "stages": [
+    {
+      "id": "smoke",
+      "task_split": "development",
+      "task_count": 4,
+      "condition_ids": [
+        "incumbent",
+        "candidate"
+      ],
+      "repeats": 1,
+      "author_attempts": 8
+    },
+    {
+      "id": "confirmation_example",
+      "task_split": "confirmation",
+      "task_count": 12,
+      "condition_ids": [
+        "incumbent",
+        "candidate"
+      ],
+      "repeats": 2,
+      "author_attempts": 48
+    }
+  ]
+}
