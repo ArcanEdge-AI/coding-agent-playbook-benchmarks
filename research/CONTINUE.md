@@ -6,12 +6,32 @@ The latest completed coding study is `deepswe-2026-09`: **54 scored attempts, 18
 
 No global instructions were changed by the paused ablation. Its `current.md` is the exact installed revised snapshot at preparation time, SHA256 `03f0069eeba198806c29dbc24a88097220c7fd5af10aaff265d8b377b8b5e325`. Preserve that snapshot as historical evidence. If the user's installed globals have changed, define and snapshot a new treatment instead of quietly replacing the old one.
 
+## Current preparation path — evaluation v1
+
+Use the [new evaluation plan](evaluation-v1/PLAN.md) and [v1 preparation guide](../benchmarks/v1/README.md) for future work. They add a reusable task-bank design, independent functional/delivery gates, blinded maintainability review, full-workflow cost accounting, budget gates, and separate initial and future-revision comparisons. This is preparation, not a completed or executable study.
+
+The initial design compares A (no custom globals, helpers available), B (non-delegation globals, helpers disabled), and C (full globals, helpers available). A and C share the same enforced helper route; A may delegate naturally. C–A tests full globals with tools held equal. C–B tests the delegation package. Future routine changes normally compare incumbent with candidate while holding unrelated settings constant.
+
+The [24-scenario catalog](../benchmarks/v1/manifest.json) is an authoring backlog: all tasks are proposed, no source packages or splits are assigned, and public scenarios are not sealed confirmation tasks. Models, budgets, promotion thresholds, and runtime evidence remain unresolved in the [initial protocol template](../protocols/initial-globals-delegation.json). The example 12/72-attempt stages are not authorized schedules or sample-size guarantees.
+
+Run these additional **offline planning checks** from the repository root:
+
+```sh
+python -B tools/benchmark/validate_plan.py
+python -B -m unittest discover -s tools/benchmark -p 'test_*.py' -v
+```
+
+They validate metadata consistency only and explicitly report that scored execution and inference are not authorized. They do not validate actual task packages, helper controls, or billing limits.
+
+Next: author and validate task packages and protected splits; repair the runtime in a new version without changing archived evidence; calibrate the review rubric and reporting; then freeze a costed pilot and obtain separate inference authorization. Do not automatically resume the historical 48-run proposal below or treat a repository-documentation request as permission to spend.
+
 ## Start here
 
 1. Read [completed results](deepswe-2026-09/results.md), [credit analysis](deepswe-2026-09/credits.md), and [behavior/safeguard observations](deepswe-2026-09/behavior.md).
 2. Read [research history](history.md) before interpreting the earlier skill and synthetic tests. Keep the [prompting guide](guides/prompting-evidence-guide.md) and [skills guide](guides/skill-maintenance-guide.md) separate.
 3. Verify the data with the offline commands below. Do not rerun model experiments merely to recover existing numbers.
 4. For delegation work, read the [paused experiment status](deepswe-delegation-ablation-2026-09/README.md), exact instruction diff, and draft-runtime limitation before changing or executing its scripts.
+5. Use [evaluation v1](evaluation-v1/PLAN.md) for the new preparation path; keep proposed designs separate from measured results.
 
 From the repository root:
 
@@ -43,12 +63,15 @@ Three known tasks, one attempt per original cell, sequential arms, an undisclose
 | Native root/helper accounting with inherited-history exclusion | `deepswe-2026-09/tools/session_accounting.py` |
 | Model-weighted credits and frozen rate card | `deepswe-2026-09/tools/credit_costs.py`, `credit-rates.json` |
 | Paused ablation instruction edits, status and draft runner | `deepswe-delegation-ablation-2026-09/` |
+| New v1 design, catalog, rubric, and planning checks | [evaluation plan](evaluation-v1/PLAN.md), [preparation guide](../benchmarks/v1/README.md) |
 
 The pinned experiment used DeepSWE commit `0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea`, Pier commit `0c802fc067a425345b24d1c69411aa98acf61a1d` (0.3.1), Codex CLI `0.154.0-alpha.6.2`, Docker CPU task images, and an authenticated evaluation profile. See the existing replay guide for exact setup and arguments. Authentication is supplied through an external local auth-file path; it is never checked into this repository. API-key billing is a different route and should not silently replace the recorded ChatGPT-authenticated route.
 
 Generated workspaces must be outside the repository and outside preserved evidence. The scripts require explicit local paths; there is no dependency on the original task's private absolute path. Never create a new attempt in a directory containing a previous start marker. Save source/image/runtime identities and the exact proposed budget before paid execution.
 
-## Next unresolved delegation step
+## Historical paused delegation step
+
+This section retains the earlier preparation state. The new v1 design is the current planning path; the archived runtime and former schedule below are not validated or automatically authorized for execution.
 
 The user selected **current globals intact with helpers available** versus **the same globals with delegation clauses removed and helpers disabled**. This tests the whole delegation setup, not only tool availability. The planned design was four models at high reasoning, three tasks, two repeats, two conditions; helpers would use Luna/max. The contemplated 48 scored runs were paused for cost, and the budget is not active authorization.
 
